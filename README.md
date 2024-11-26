@@ -14,6 +14,9 @@
 ###### [Guia Instalacion FileZilla Client Ubuntu 22](docs1/Guia_Instalacion_FileZilla_Client_Ubuntu.md)
 ###### [Conectar wifi ubuntu 22 Desktop desde terminal](docs1/conectar_wifi_ubuntu_22_terminal.md)
 
+##### DOCUMENTACIÓN
+###### [Computación en la nube](docs1/Computacion_en_la_Nube.md)
+
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------
