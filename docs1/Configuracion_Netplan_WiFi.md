@@ -85,4 +85,3 @@ Busca que el adaptador inalámbrico (por ejemplo, `wlan0`) tenga una dirección 
   sudo netplan try
   ```
 
-¡Listo! Tu tarjeta de red inalámbrica debería estar configurada correctamente.
