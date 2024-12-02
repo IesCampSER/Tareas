@@ -28,8 +28,13 @@ sudo ip link set <interfaz> down
 ```bash
 sudo ip link set <interfaz> up
 ```
-
 ## 3. Comprobación de la Ruta y Puerta de Enlace Predeterminada
+### comprobación de la ruta:
+Esta opción nos muestra la ruta que un paquete tomará para llegar al destino. Para verificar la información de enrutamiento de la red, ejecutamos el siguiente comando:
+```bash
+ip route show
+ip route s
+```
 ### Verificar la puerta de enlace predeterminada:
 ```bash
 ip route | grep default
@@ -46,6 +51,16 @@ ping 192.168.1.1
 ```
 
 ## 4. Edición y Creación de Archivos YAML para Configuración de Red
+Netplan es la herramienta que incorpora Ubuntu desde la versión 17.05 para la administración y configuración de redes. Ésta se puede usar para definir un archivo en formato YAML ( Yet Another
+Markup Language) desde donde se creará la configuración elegida para las redes del sistema que netplan podrá interpretar para aplicar los cambios.
+
+Esta herramienta reemplaza por completo el archivo de configuración de interfaces estáticas alojado bajo la ruta /etc/network/interfaces que se utilizaba en las versiones anteriores de
+ubuntu.
+
+La ruta de configuración de las interfaces se aloja bajo la ruta /etc/netplan/*.yaml. Desde la ruta podremos encontrar dos renderers, networkmanager y networkd.
+
+El primero de los renders NetworkManager se utiliza principalmente en entornos de escritorio mientras que NetWorkd en entornos de servidor. Cuando usemos NetworkManager como procesador, el sistema usará el GUI de NetworkManager para administrar las interfaces.
+
 ### Localizar el archivo de configuración de red:
 Los archivos de configuración suelen estar en:
 ```bash
@@ -53,9 +68,16 @@ Los archivos de configuración suelen estar en:
 ```
 
 ### Crear un archivo YAML si no existe:
-Si no existe, crea uno usando `nano` o tu editor preferido:
+En caso de que este archivo no existiera lo que tendríamos que hacer sería teclear el siguiente comando para que el sistema nos lo creara.
 ```bash
-sudo nano /etc/netplan/01-netcfg.yaml
+sudo netplan generate
+```
+De esta forma netplan se encarga de crear por nosotros el archivo de configuración de interfaces de red.
+
+A continuación recomendamos duplicar el archivo en forma de backup para asegurar la
+recuperación en caso de fallo del propio archivo.
+```bash
+sudo nano /etc/netplan/01-network-manager-all.yaml
 ```
 
 ### Ejemplo de contenido inicial:
