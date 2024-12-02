@@ -109,6 +109,23 @@ network:
 - `gateway4`: Dirección de la puerta de enlace.
 - `nameservers`: Direcciones de servidores DNS.
 
+Es posible que obtengas el warning gateway has been deprecated, puedes probar con:
+```yaml
+network:
+  version: 2
+  ethernets:
+    <interfaz>:
+      addresses:
+        - 192.168.1.100/24
+      routes:
+        - to: default
+          via: 192.168.1.1
+      nameservers:
+        addresses:
+          - 8.8.8.8
+          - 8.8.4.4
+```
+
 ### Guardar y salir del editor:
 Si usas `nano`, presiona `Ctrl+O` para guardar y `Ctrl+X` para salir.
 
