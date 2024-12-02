@@ -125,7 +125,7 @@ network:
           - 8.8.8.8
           - 8.8.4.4
 ```
-Si deseas configurar varias tarjetas de red añade a continuación tantos apartados <interfaz> como tarjetas
+Si deseas configurar varias tarjetas de red añade a continuación tantos apartados interfaz como tarjetas
 ### Guardar y salir del editor:
 Si usas `nano`, presiona `Ctrl+O` para guardar y `Ctrl+X` para salir.
 
