@@ -12,6 +12,7 @@
 ###### [Guia Instalación https Apache](docs1/https.md)
 ###### [Guia Instalación Filezilla Server windows](docs1/Guia_Instalacion_FileZilla_Server.md)
 ###### [Guia Instalacion FileZilla Client Ubuntu 22](docs1/Guia_Instalacion_FileZilla_Client_Ubuntu.md)
+###### [Configuracion red ubuntu 22 desde terminal](docs1/configuracion_red_ubuntu22.md)
 ###### [Configuracion Netplan wifi ubuntu 22 desde terminal](docs1/Configuracion_Netplan_WiFi.md)
 
 ##### DOCUMENTACIÓN
