@@ -1,6 +1,7 @@
 ##### TAREAS ASIGNATURA SERVICIOS EN RED
 ###### [DNS bind](docs/dnsbind.md)
 ###### [DNS dnsmasq](docs/dnsmasq.md)
+###### [Servidor de correo postfix](docs/instalacion_postfix_ubuntu.md)
 
 ##### GUIAS PARA REALIZAR LAS TAREAS
 ###### [Guia FTP vsftp](docs1/vsftp.md)
