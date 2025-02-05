@@ -1,4 +1,4 @@
-## PARA REVISAR, PROBLEMAS EN ENVIO DE CORREOS EXTERNOS
+ PARA REVISAR, PROBLEMAS EN ENVIO DE CORREOS EXTERNOS
 # Instalación de Postfix en Ubuntu 22.04 ó 24.04
 
 Postfix es un servidor de correo electrónico popular, usado ampliamente por su facilidad de configuración y rendimiento. A continuación, se describen los pasos para instalar y configurar Postfix en Ubuntu 22.04 o 24.04
