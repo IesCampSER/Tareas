@@ -88,13 +88,14 @@ En este ejemplo crearemos un sitio web llamado bardetapas
 
    ```
 
-3. Crea un archivo de configuración para tu sitio virtual. Usa tu editor de texto preferido para crear el archivo:
-
-   ```bash
-   sudo nano /etc/apache2/sites-available/bardetapas.conf
-   ```
-
-   En este archivo, agrega la siguiente configuración:
+3. Crea un archivo de configuración para tu sitio virtual. Para ello puedes:
+     
+- Los ficheros de configuración de los sitios webs se encuentran en el directorio /etc/apache2/sites-available, hay un fichero que se llama 000-default.conf que es la configuración del sitio web por defecto. Puedes utilizar este fichero para copiarte la configuración
+ ```bash
+$ cd /etc/apache2/sites-available
+$ sudo cp 000-default.conf bardetapas.conf
+  ```
+   Ahora abre bardetapas.conf  y modifica para obtener la siguiente configuración:
 
    ```
    <VirtualHost bardetapas.com:80>
