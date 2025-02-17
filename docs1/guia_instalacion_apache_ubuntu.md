@@ -88,7 +88,7 @@ En este ejemplo crearemos un sitio web llamado bardetapas
 
    ```
 
-3. Crea un archivo de configuración para tu sitio virtual. Para ello puedes:
+3. Crea un archivo de configuración para tu sitio virtual. 
      
    Los ficheros de configuración de los sitios webs se encuentran en el directorio /etc/apache2/sites-available, hay un fichero que se llama 000-default.conf que es la configuración del sitio web por defecto. Puedes utilizar este fichero para copiarte la configuración
    ```bash
