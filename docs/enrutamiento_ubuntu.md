@@ -47,29 +47,39 @@ Si alguna de estas tres cosas no funciona no continuéis y comprobad bien las pu
 
 Para ello introduciremos en consola las siguientes ordenes:
 
-``#echo 1 > /proc/sys/net/ipv4/ip_forward``
+```
+#echo 1 > /proc/sys/net/ipv4/ip_forward
+```
 
 con esta orden damos el valor 1 a la variable ip_forward, habilitamos el enrutamiento, pero sólo lo hace de forma temporal, al apagar el equipo la variable ip_forward volverá a estar a 0. Podéis comprobar que la variable ha cogido el valor 1 haciendo:
 
-`#cat /proc/sys/net/ipv4/ip_forward`
+```
+#cat /proc/sys/net/ipv4/ip_forward
+```
 
 debería devolveros el valor 1.
 Si queremos que los cambios sean permanentes:
 editamos el archivo sysctl.conf
 
-`#nano /etc/sysctl.conf`
+```
+#nano /etc/sysctl.conf
+```
 
 buscamos #net.ipv4.ip_forward=1 y quitamos el # (lo descomentamos)
 
 y aplicamos los cambios
 
-`sudo sysctl -p`
+```
+sudo sysctl -p
+```
 
 Hasta aquí hemos conseguido que haya comunicación entre las dos redes 192.168.2.0/24 y 192.168.20.0/24
 
 #### 5) Ahora nos falta otro comando para habilitar el enmascaramiento de la ip cuando los paquetes salen hacia internet. Si no realizamos este paso los paquetes “de vuelta” de internet no podrían entrar a la red.
 
-`#iptables –t nat –A POSTROUTING –o enp2s0 –j MASQUERADE`
+```
+#iptables –t nat –A POSTROUTING –o enp2s0 –j MASQUERADE
+```
 
 donde enp2s0 es la interfaz de red de nuestro servidor ubuntu 192.168.2.2
 
@@ -79,9 +89,11 @@ MASQUERADE all anywhere anywhere
 
 #### 6) Debemos asegurarnos también de que el servidor permite el reenvio entre interfaces, lo haremos así:
 
-```sudo iptables -A FORWARD -i enp1s0 -o enp2s0 -j ACCEPT```
+```
+sudo iptables -A FORWARD -i enp1s0 -o enp2s0 -j ACCEPT
 
-```sudo iptables -A FORWARD -i enp2s0 -o enp1s0 -m state --state RELATED,ESTABLISHED -j ACCEPT```
+sudo iptables -A FORWARD -i enp2s0 -o enp1s0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+```
 
 siendo enp1s0 la tarjeta de red del servidor que está en red interna y enp2s0 la tarjeta de red del servidor que está en modo puente y da salida a internet
 
@@ -111,6 +123,8 @@ iptables -t nat -A POSTROUTING -o enp2s0 -j MASQUERADE
 
 Si necesitas hacer la configuración persistente, puedes guardar las reglas de iptables con:
 
-``sudo iptables-save > /etc/iptables/rules.v4``
+```
+sudo iptables-save > /etc/iptables/rules.v4
+ ```
 
 (Instala iptables-persistent si no existe)
