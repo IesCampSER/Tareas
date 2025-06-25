@@ -3,6 +3,8 @@ Lo más importante de esta práctica es que entendáis bien el escenario que vai
 
 Este es el esquema de red con el que queremos trabajar
 
+![imagen](/img/EnrutamientoW.png)
+
 #### 1) El Servidor Ubuntu como veis tiene dos tarjetas de red (en virtualBox configurareis dos adaptadores de red)
 
 Un adaptador está configurado en modo puente o sea que le pondréis una ip en la red que tenéis en casa (en mi caso en casa tengo la red 192.168.2.0/24, así que al adaptador de red que tengo en modo puente le he puesto la ip 192.168.2.2/24)
