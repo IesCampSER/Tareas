@@ -33,7 +33,7 @@ El otro adaptador lo tengo en "Red Interna" y lo configuro de forma estática co
 
  Dns: 192.168.20.5 si tienes tu servidor DNS funcionando ó 8.8.8.8 S.DNS gratuito de google o bien el DNS de tu proveedor de internet
 
-Antes de continuar comprobad que las dos redes os funcionan:
+**Antes de continuar comprobad que las dos redes os funcionan:**
 
 • ping desde el servidor a un equipo cliente
 
@@ -57,7 +57,7 @@ debería devolveros el valor 1.
 Si queremos que los cambios sean permanentes:
 editamos el archivo sysctl.conf
 
-'#nano /etc/sysctl.conf`
+`#nano /etc/sysctl.conf`
 
 buscamos #net.ipv4.ip_forward=1 y quitamos el # (lo descomentamos)
 
@@ -67,7 +67,7 @@ y aplicamos los cambios
 
 Hasta aquí hemos conseguido que haya comunicación entre las dos redes 192.168.2.0/24 y 192.168.20.0/24
 
-Ahora nos falta otro comando para habilitar el enmascaramiento de la ip cuando los paquetes salen hacia internet. Si no realizamos este paso los paquetes “de vuelta” de internet no podrían entrar a la red.
+#### 5) Ahora nos falta otro comando para habilitar el enmascaramiento de la ip cuando los paquetes salen hacia internet. Si no realizamos este paso los paquetes “de vuelta” de internet no podrían entrar a la red.
 
 `#iptables –t nat –A POSTROUTING –o enp2s0 –j MASQUERADE`
 
@@ -77,10 +77,11 @@ Al ejecutar el comando: iptables -L -t nat se ve que se ha añadido la regla:
 
 MASQUERADE all anywhere anywhere
 
-Debemos asegurarnos también de que el servidor permite el reenvio entre interfaces, lo haremos así:
+#### 6) Debemos asegurarnos también de que el servidor permite el reenvio entre interfaces, lo haremos así:
 
-```sudo iptables -A FORWARD -i enp1s0 -o enp2s0 -j ACCEPT
-sudo iptables -A FORWARD -i enp2s0 -o enp1s0 -m state --state RELATED,ESTABLISHED -j ACCEPT```
+```sudo iptables -A FORWARD -i enp1s0 -o enp2s0 -j ACCEPT```
+
+```sudo iptables -A FORWARD -i enp2s0 -o enp1s0 -m state --state RELATED,ESTABLISHED -j ACCEPT```
 
 siendo enp1s0 la tarjeta de red del servidor que está en red interna y enp2s0 la tarjeta de red del servidor que está en modo puente y da salida a internet
 
@@ -111,4 +112,5 @@ iptables -t nat -A POSTROUTING -o enp2s0 -j MASQUERADE
 Si necesitas hacer la configuración persistente, puedes guardar las reglas de iptables con:
 
 ``sudo iptables-save > /etc/iptables/rules.v4``
+
 (Instala iptables-persistent si no existe)
