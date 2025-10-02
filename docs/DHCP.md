@@ -37,9 +37,9 @@ de nuestros servidores).
 
 ---
 
-\# A slightly different configuration for an internal subnet.
-subnet 192.168.20.0 netmask 255.255.255.0 {
-range 192.168.20.100 192.168.20.150;
+\# A slightly different configuration for an internal subnet.   
+subnet 192.168.20.0 netmask 255.255.255.0 {  
+range 192.168.20.100 192.168.20.150;  
 
 option domain-name-servers 192.168.20.5;
 
@@ -155,4 +155,5 @@ Reserva ahora una dirección concreta al cliente según su MAC y entrega
 **Del cliente:** un terminal con el comando ipconfig ejecutado, para comprobar la configuración que ha obtenido del servidor. Recuerda que el cliente debe obtener la **ip** dinámicamente.
 
 **Del servidor:** la ventana de configuración del servidor DHCP, dentro de la carpeta: *Ámbito*, selecciona la carpeta: *Reservas*, donde se vea que la dirección obtenida por el cliente es la que se le ha configurado en este apartado al servidor.
+
 
