@@ -67,7 +67,9 @@ editamos el archivo sysctl.conf
 #nano /etc/sysctl.conf
 ```
 
-buscamos #net.ipv4.ip_forward=1 y quitamos el # (lo descomentamos)
+buscamos #net.ipv4.ip_forward=1 y quitamos el # (lo descomentamos)  
+
+<img src="../img/enr1.png" width=600>
 
 y aplicamos los cambios
 
