@@ -74,7 +74,7 @@ buscamos #net.ipv4.ip_forward=1 y quitamos el # (lo descomentamos)
 y aplicamos los cambios
 
 ```
-sudo sysctl -p
+sudo sysctl -p  
 ```
 
 Hasta aquí hemos conseguido que haya comunicación entre las dos redes 192.168.2.0/24 y 192.168.20.0/24
@@ -90,6 +90,8 @@ donde enp2s0 es la interfaz de red de nuestro servidor ubuntu 192.168.2.2
 Al ejecutar el comando: iptables -L -t nat se ve que se ha añadido la regla:
 
 MASQUERADE all anywhere anywhere
+
+<img src="../img/enr2.png" width=600>  
 
 #### 6) Debemos asegurarnos también de que el servidor permite el reenvio entre interfaces, lo haremos así:
 
@@ -110,6 +112,14 @@ Desde el cliente:
 - ¿Puedes hacer ping a una IP pública (como 8.8.8.8)?
 
 - ¿Puedes resolver dominios (como ping google.com)?
+
+Al ejecutar desde un cliente linux un traceroute www.greenpeace.com observa los saltos:  
+
+<img src="../img/enr3.png" width=600>  
+ 
+ Idem con un cliente windows al hacer el equivalente  tracert www.greenpeace.com
+
+<img src="../img/enr4.png" width=600>    
 
 #### Solución resumida
 
