@@ -1,7 +1,5 @@
- PARA REVISAR, PROBLEMAS EN ENVIO DE CORREOS EXTERNOS, faltan imagenes..
-# Instalación de Postfix en Ubuntu 22.04 ó 24.04
-
-Postfix es un servidor de correo electrónico popular, usado ampliamente por su facilidad de configuración y rendimiento. A continuación, se describen los pasos para instalar y configurar Postfix en Ubuntu 22.04 o 24.04
+# Instalación de Postfix en contenedor docker 
+Postfix es un servidor de correo electrónico popular, usado ampliamente por su facilidad de configuración y rendimiento. A continuación, se describen los pasos para instalar y configurar Postfix en un contenedor ubuntu 20
 
 ---
 
@@ -9,13 +7,21 @@ Postfix es un servidor de correo electrónico popular, usado ampliamente por su 
 
 Configuraciones previas:
 
-- VirtualBox- RedNat 192.168.20.0/24; dhcp desactivado
-- Máquina virtual con Ubuntu server 22.04 ó 24.04, ip estática 192.168.20.5/24
-- Instalado y corriendo servidor dns
+- Docker instalado en la máquina
+- Instalado y corriendo servidor dns en el mismo contenedor u otro de la red
 - dominio sercamp.org
-- Máquina virtual con Ubuntu Desktop 22.04, ip 192.168.20.21
 
 ---
+Voy a instalar un servidor de correo pero esta vez en lugar de utilizar un máquina virtual lo haré en un contenedor docker.  
+## Paso 0: Creación del contenedor  
+Descargo la imagen de Ubuntu:20.04  
+$ docker pull ubuntu:20.04  
+Creo un contenedor y lo ejecuto exponiendo el puerto 25 (SMTP):  
+
+imagen
+
+Abro un terminal dentro del contenedor:  
+
 
 ## Paso 1: Instalación de Postfix
 
