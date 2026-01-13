@@ -18,7 +18,7 @@ Descargo la imagen de Ubuntu:20.04
 $ docker pull ubuntu:20.04  
 Creo un contenedor y lo ejecuto exponiendo el puerto 25 (SMTP):  
 
-imagen
+![Imagen bind](/img/correo1.png)
 
 Abro un terminal dentro del contenedor:  
 
