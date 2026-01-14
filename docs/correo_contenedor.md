@@ -8,7 +8,7 @@ Postfix es un servidor de correo electrónico popular, usado ampliamente por su 
 Configuraciones previas:
 
 - Docker instalado en la máquina
-- Instalado y corriendo servidor dns en el mismo contenedor u otro de la red
+- Instalado y corriendo servidor dns en el mismo contenedor, otro de la red o una máquina en la red
 - dominio sercamp.org
 
 ---
