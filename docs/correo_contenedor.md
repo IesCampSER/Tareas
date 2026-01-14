@@ -29,7 +29,7 @@ docker exec -it postfix /bin/bash
 1. Instala Postfix desde los repositorios oficiales de Ubuntu ejecutando:
 
 ```bash
-sudo apt install postfix -y
+apt install postfix -y
 ```
 
 2. Durante la instalación, aparecerá un menú de configuración. Selecciona las siguientes opciones:
@@ -72,7 +72,7 @@ debes tener escuchando el puerto 25 del servidor de correo
 1. Edita el archivo principal de configuración de Postfix, (recuerda hacer una copia del mismo antes de modificarlo):
 
 ```bash
-sudo nano /etc/postfix/main.cf
+nano /etc/postfix/main.cf
 ```
 
 2. Verifica o actualiza las siguientes configuraciones:
@@ -102,18 +102,10 @@ recipient_delimiter = +
 
 3. Guarda y cierra el archivo `Ctrl+O`, `Enter` y luego `Ctrl+X`.
 
-4. Reinicia Postfix para aplicar los cambios:
+4. Reinicia Postfix si has realizado cambios:
 
-```bash
-systemctl restart postfix
-```
 Haz un cat del archivo /etc/mailname. Debe salir tu dominio
 
-5. Comprueba el servicio
-
-```bash
-sudo service postfix status
-```
 ---
 
 ## Paso 3: Prueba de funcionamiento -- Sendmail en el servidor -- Envío local
@@ -131,7 +123,7 @@ Con este sistema, todos los correos de un usuario se almacenan en el mismo fiche
 1. Usa el comando `mail` para enviar un correo de prueba (instala `mailutils` si no está disponible):
 
 ```bash
-sudo apt install mailutils -y
+apt install mailutils -y
 
 echo "Este es un correo de prueba" | mail -s "Prueba Postfix" usuario@sercamp.org
 ```
@@ -141,7 +133,7 @@ Sustituye ```usuario``` por uno de los usuarios del sistema que tengas en el ser
 2. Revisa los registros de Postfix para confirmar que el correo fue enviado:
 
 ```bash
-sudo tail -f /var/log/mail.log
+tail -f /var/log/mail.log
 ```
 3. Revisa el correo del usuario. En la carpeta /var/mail haz un cat usuario 
 4. Envia otro correo y comprueba que se alamcena en el mismo archivo
@@ -170,11 +162,11 @@ Cambiar la configuración de postfix.
 
 ```home_mailbox_ = Maildir/```
 
-- Reiniciar servicio
+- Reinicia el servicio
 
-```sudo service postfix restart``` 
+```service postfix restart``` 
 
-```sudo postconf -n```
+```postconf -n```
 
 Envia otro correo y comprueba que ahora lo almacena maildir y está en un archivo diferente
 
@@ -186,10 +178,8 @@ una vez has enviado el mensaje puedes consultarlo con mail. Si hay varios mensaj
 
 ## Paso 6: Instalar dovecot con protocolo IMAP
 
-POSTFIX tiene la funcionalidad de MTA(agente de transferencia de correo), desde el punto de vista de un usuario de sercamp.org, es el que permite enviar correos y que lleguen a su destino.
-DOVECOT Dovecot es un MDA que tiene por función almacenar el correo y servirlo mediante POP3 o IMAP4
-al programa cliente de correo.
-
+POSTFIX tiene la funcionalidad de MTA (agente de transferencia de correo), desde el punto de vista de un usuario de sercamp.org, es el que permite enviar correos y que lleguen a su destino.
+DOVECOT Dovecot es un MDA que tiene por función almacenar el correo y servirlo mediante POP3 o IMAP4 al programa cliente de correo.
 
 Instalar el paquete que permite utilizar IMAP4
 ```bash
