@@ -217,12 +217,10 @@ descomenta la linea:
 comenta la linea
 -  mail_location = mbox:~/mail:INBOX=/var/mail/%u
 
-
-
-Reiniciar servicio ```sudo service dovecot restart```
+Reinicia servicio  
+```sudo service dovecot restart```
 
 ## Paso 7: Prueba desde un ordenador cliente con Thunderbird
-
 
 Configuración de cuenta:
 
