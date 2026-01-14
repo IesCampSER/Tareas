@@ -156,6 +156,9 @@ Sigues escribiendo.
 
 Para enviarlo pulsas Ctrl+d
 
+![Imagen bind](/img/correo21.png)  
+![Imagen bind](/img/correo22.png)  
+
 ## Paso 5: Cambiar mailbox por maildir
 
 MailDir es una forma distinta de almacenar los correos. Al cambiar el sistema de almacenamiento de los correos de mailbox a maildir, se crea una carpeta Maildir dentro del directorio personal de cada usuario. En esa carpeta es donde se van a guardar los correos y cada correo se guarda como un archivo diferente, en vez de todos en el mismo archivo.
