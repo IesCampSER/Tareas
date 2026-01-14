@@ -12,15 +12,15 @@ Configuraciones previas:
 - dominio sercamp.org
 
 ---
-Voy a instalar un servidor de correo pero esta vez en lugar de utilizar un máquina virtual lo haré en un contenedor docker.  
+Vamos a instalar un servidor de correo pero esta vez en lugar de utilizar un máquina virtual lo haremos en un contenedor docker.  
 ## Paso 0: Creación del contenedor  
-Descargo la imagen de Ubuntu:20.04  
+Descarga la imagen de Ubuntu:20.04  
 $ docker pull ubuntu:20.04  
-Creo un contenedor y lo ejecuto exponiendo el puerto 25 (SMTP):  
+Crea un contenedor y ejecutalo exponiendo el puerto 25 (SMTP):  
 
 ![Imagen bind](/img/correo1.png)
 
-Abro un terminal dentro del contenedor:  
+Abre un terminal dentro del contenedor:  
 ```bash
 docker exec -it postfix /bin/bash
 ```
@@ -65,7 +65,11 @@ service postfix start
 ```
 5. Puedes comprobar puertos por ejemplo con netstat (no estará instalado deberás hacerlo) 
 debes tener escuchando el puerto 25 del servidor de correo
----
+---  
+Agrega tu usuario al contenedor  
+```bash
+useradd -m lourdes && echo "lourdes:qwe_123" | chpasswd;
+```
 
 ## Paso 2: Configuración básica
 
@@ -243,7 +247,7 @@ Protocolo: IMAP
 
 Puerto: 143
 
-Nos saldrá una advertencia de que el servidor no usa cifrado, pulsamos en ```Entiendo los riesgos``` y ```Confirmar```
+Nos saldrá una advertencia de que el servidor no usa cifrado, pulsamos en ```Entiendo los riesgos``` y ``Confirmar```
 
 
 ## Comprobación del estado de Postfix
