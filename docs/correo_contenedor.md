@@ -37,8 +37,10 @@ sudo apt install postfix -y
    - **System mail name:** Introduce tu nombre de dominio principal  `sercamp.org`.  
 ![Imagen bind](/img/correo2.png)  
 ![Imagen bind](/img/correo3.png)  
-![Imagen bind](/img/correo4.png)  
-![Imagen bind](/img/correo5.png)
+![Imagen bind](/img/correo4.png)
+  
+mydestination = $myhostname, sercamp.org, localhost.localdomain, localhost  
+  
 ![Imagen bind](/img/correo6.png)
 ![Imagen bind](/img/correo7.png)
 ![Imagen bind](/img/correo8.png)
@@ -57,7 +59,7 @@ dpkg-reconfigure postfix
 ```bash
 service postfix status
 ```
-Si está arrancado inicialo
+Si no está arrancado inicialo
 ```bash
 service postfix start
 ```
