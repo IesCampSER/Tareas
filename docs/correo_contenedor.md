@@ -254,8 +254,4 @@ Nos saldrá una advertencia de que el servidor no usa cifrado, pulsamos en ```En
 
 Verifica que Postfix esté activo y funcionando correctamente:
 
-```bash
-sudo systemctl status postfix
-```
-
 Si todo está configurado correctamente deberías poder enviar y recibir correos desde tu cliente thunderbird entre los usuarios de correo que tienes en el servidor
