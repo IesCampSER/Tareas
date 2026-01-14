@@ -154,7 +154,9 @@ Escribes todo lo que quieras enviar.
 
 Sigues escribiendo.
 
-Para enviarlo pulsas Ctrl+d
+Para enviarlo pulsas Ctrl+d  
+
+Vueves a temp-mail y te aparece el mensaje (cuidado esta cuenta como indica su nombre es temporal dura de 10 a 60 minutos)
 
 ![Imagen bind](/img/correo21.png)  
 ![Imagen bind](/img/correo22.png)  
