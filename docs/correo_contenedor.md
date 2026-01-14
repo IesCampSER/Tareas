@@ -232,7 +232,7 @@ Reinicia servicio
 ## Paso 7: Prueba desde un ordenador cliente con Thunderbird
 
 Para realizar este paso tienes que tener como servidor DNS nuestro servidor de clase ya que thunderbird va a comprobar que existe el dominio sercamp.org y el registro MX correspondiente, así que abre thuderbird en una de las máquinas virtuales que tenga como servidor DNS nuestro servidor de siempre y por supuesto arranca también el propio servidor.  
-Además, para que funcione esta configuraciónhe hay que actualizar la IP del servidor donde apunta el dominio mail.sercamp.org en el servidor DNS. La nueva dirección IP es la máquina HOST donde hemos montado el docker con postfix.
+Además, para que funcione esta configuración hay que actualizar la IP del servidor donde apunta el dominio mail.sercamp.org en el resgistro del servidor DNS. La nueva dirección IP es la máquina HOST donde hemos montado el docker con postfix.
 
 Configuración de cuenta:
 
