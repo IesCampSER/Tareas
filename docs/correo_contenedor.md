@@ -21,8 +21,9 @@ Creo un contenedor y lo ejecuto exponiendo el puerto 25 (SMTP):
 ![Imagen bind](/img/correo1.png)
 
 Abro un terminal dentro del contenedor:  
-
-
+```bash
+docker exec -it postfix /bin/bash
+```
 ## Paso 1: Instalación de Postfix
 
 1. Instala Postfix desde los repositorios oficiales de Ubuntu ejecutando:
@@ -33,24 +34,35 @@ sudo apt install postfix -y
 
 2. Durante la instalación, aparecerá un menú de configuración. Selecciona las siguientes opciones:
    - **General type of mail configuration:** Elije `Internet Site`.
-   - **System mail name:** Introduce tu nombre de dominio principal  `sercamp.org`.
+   - **System mail name:** Introduce tu nombre de dominio principal  `sercamp.org`.  
+![Imagen bind](/img/correo2.png)  
+![Imagen bind](/img/correo3.png)  
+![Imagen bind](/img/correo4.png)  
+![Imagen bind](/img/correo5.png)
+![Imagen bind](/img/correo6.png)
+![Imagen bind](/img/correo7.png)
+![Imagen bind](/img/correo8.png)
+![Imagen bind](/img/correo9.png)
+![Imagen bind](/img/correo10.png)
+![Imagen bind](/img/correo11.png)
+![Imagen bind](/img/correo12.png)
+![Imagen bind](/img/correo13.png)
 
 3. Si no aparece el menú de configuración, puedes iniciarlo manualmente con:
 ```bash
-sudo dpkg-reconfigure postfix
+dpkg-reconfigure postfix
 ```
 
 4. Comprueba el servicio
 ```bash
-sudo service postfix status
+service postfix status
 ```
-
-5. Comprueba puertos 
+Si está arrancado inicialo
 ```bash
-sudo ss -plnut
+service postfix start
 ```
+5. Puedes comprobar puertos por ejemplo con netstat (no estará instalado deberás hacerlo) 
 debes tener escuchando el puerto 25 del servidor de correo
-
 ---
 
 ## Paso 2: Configuración básica
@@ -69,7 +81,7 @@ myhostname = mail.sercamp.org
 - Configuramos en mydestination los dominos de los que vamos aceptar correos entrantes.
 mydestination = $myhostname, sercamp.org, localhost.localdomain, localhost
 
-- En el campo mynetworks se configura la red en la que tenemos clientes que pueden enviar correos desde este servidor postfix, tenemos que añadir la subred 192.168.20.0/24
+- En el campo mynetworks se configura la red en la que tenemos clientes que pueden enviar correos desde este servidor postfix, añadimos 127.0.0.0/8
 
 - El campo myorigin configura lo que añade el servidor de correo para los correos originados en este servidor(lo que va a la derecha de la @), en nuestro caso será sercamp.org
 
@@ -81,7 +93,7 @@ inet_interfaces = all
 inet_protocols = ipv4
 mydestination = $myhostname, sercamp.org, localhost.localdomain, localhost
 relayhost =
-mynetworks = 192.168.20.0/24 127.0.0.0/8 [::1]/128
+mynetworks = 127.0.0.0/8 [::1]/128
 mailbox_size_limit = 0
 recipient_delimiter = +
 ```
@@ -91,7 +103,7 @@ recipient_delimiter = +
 4. Reinicia Postfix para aplicar los cambios:
 
 ```bash
-sudo systemctl restart postfix
+systemctl restart postfix
 ```
 Haz un cat del archivo /etc/mailname. Debe salir tu dominio
 
@@ -164,14 +176,11 @@ Cambiar la configuración de postfix.
 
 Envia otro correo y comprueba que ahora lo almacena maildir y está en un archivo diferente
 
-
-imagen
-
 teclea: ```mail usuario@sercamp.org ``` te aparecerán los campos para que rellenes asunto, cuerpo..
 
 ```Ctrl+d para enviar.```
 
-una vez has enviado el mensaje puedes consultarlo con mail. Mira la pantalla de ejemplo verás que hay 4 mensajes enviados si pulsas el número, en mi caso el 4, te aparece el desglose del mensaje.
+una vez has enviado el mensaje puedes consultarlo con mail. Si hay varios mensajes enviados pulsas el número y te aparece el desglose del mensaje.
 
 ## Paso 6: Instalar dovecot con protocolo IMAP
 
