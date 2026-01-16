@@ -1,4 +1,4 @@
-# Apuntes de Servicios en Red: Mensajería, Streaming y Listas de Distribución
+# Mensajería, Streaming y Listas de Distribución
 
 Este documento recoge los conceptos fundamentales sobre servicios de comunicación en tiempo real, difusión de contenidos multimedia y gestión de listas de correo, orientados a la administración de sistemas informáticos en red.
 
