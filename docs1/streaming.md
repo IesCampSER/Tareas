@@ -1,4 +1,4 @@
-# UD.7 – Streaming
+# Streaming
 
 ## 1. Definición de streaming
 El *streaming* es una tecnología que permite la reproducción continua de contenidos multimedia (audio y vídeo) mientras estos se reciben a través de una red, sin necesidad de descargar el archivo completo previamente.
@@ -133,5 +133,3 @@ Usados en sistemas profesionales, videovigilancia y entornos corporativos.
 - Cumplimiento del **RGPD** en plataformas que gestionan datos personales.
 - Monitorización de calidad (latencia, jitter, pérdida de paquetes).
 
-## Conclusión
-El streaming ha evolucionado desde sistemas simples hacia arquitecturas altamente escalables basadas en HTTP, CDN y adaptación dinámica de calidad. Aunque protocolos clásicos siguen existiendo en contextos específicos, los estándares modernos y la seguridad son hoy elementos clave.
