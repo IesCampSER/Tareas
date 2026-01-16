@@ -1,81 +1,86 @@
-# Mensajería, Streaming y Listas de Distribución
+# Listas de distribución
 
-Este documento recoge los conceptos fundamentales sobre servicios de comunicación en tiempo real, difusión de contenidos multimedia y gestión de listas de correo, orientados a la administración de sistemas informáticos en red.
+## Introducción
+Las listas de distribución son mecanismos para difundir información a múltiples destinatarios de forma centralizada, tradicionalmente mediante correo electrónico. Permiten que un mensaje enviado a una única dirección sea redistribuido automáticamente a todos los miembros de la lista.
 
----
+Aunque su origen está ligado al correo electrónico clásico, hoy en día el concepto de lista de distribución se ha ampliado e integrado en plataformas colaborativas y servicios en la nube.
 
-## 1. Mensajería Instantánea (MI)
+## Objetivo
+El objetivo principal de una lista de distribución es facilitar la comunicación periódica entre personas que necesitan compartir información de forma eficiente, evitando el envío individual de mensajes y reduciendo errores u omisiones.
 
-La **mensajería instantánea** es una forma de comunicación en tiempo real basada en texto a través de dispositivos conectados a una red local o Internet [1].
+Son habituales en:
+- Organizaciones y empresas
+- Centros educativos
+- Asociaciones y colectivos
+- Proyectos colaborativos
 
-### Funcionamiento del Servicio
-El intercambio de mensajes se produce entre usuarios que previamente han aceptado comunicarse [1]. El flujo técnico general es:
-1. **Conexión:** El usuario se conecta al servidor y establece su estado de **presencia** (disponible, ocupado, etc.) [1, 2].
-2. **Sincronización:** El servidor envía la lista de contactos asociada y el estado de cada uno de ellos [3].
-3. **Notificación:** El servidor informa automáticamente de la presencia del usuario a sus contactos conectados [3].
-4. **Desconexión:** Al cerrar el cliente, se informa al servidor, que notifica a los contactos la salida del usuario [2].
+## Características principales
+Toda lista de distribución debe contar con:
 
-Para dar de alta a un contacto es necesario conocer su alias y que este **autorice la inclusión** [2, 3].
+- **Administrador de la lista**: responsable de la gestión y configuración.
+- **Usuarios o suscriptores**: personas que reciben y, según permisos, envían mensajes.
 
-### Protocolo XMPP/Jabber
-Frente a protocolos propietarios (AIM, ICQ, MSN) que suelen ser incompatibles entre sí, surge **XMPP** como un estándar abierto basado en **XML** [4]. Sus características principales son:
-* **Arquitectura Descentralizada:** Similar al correo electrónico; cualquiera puede montar su propio servidor sin depender de una autoridad central [5].
-* **Seguridad Robusta:** Utiliza sistemas de cifrado como **SASL y TLS** [5].
-* **Flexibilidad:** Permite el uso de **pasarelas** para conectar con otros protocolos propietarios [5].
-* **Software recomendado:**
-    * **Servidores:** `ejabberd`, `OpenFire`, `jabberd2` [6].
-    * **Clientes genéricos:** `Pidgin` [6].
+Para formar parte de una lista, el usuario debe completar un proceso de suscripción, que puede ser automático o requerir aprobación.
 
----
+## Funciones del administrador de la lista
+El administrador de la lista tiene, como mínimo, las siguientes responsabilidades:
 
-## 2. Tecnologías de Streaming
+- Gestión de usuarios:
+  - Altas y bajas
+  - Bloqueos temporales
+  - Invitaciones
+  - Asignación de roles (usuarios, moderadores)
+- Gestión de mensajes:
+  - Moderación de contenidos (si aplica)
+  - Configuración de permisos de envío
+- Mantenimiento:
+  - Revisión de rebotes
+  - Actualización de configuraciones
+  - Cumplimiento normativo
 
-El **streaming** permite reproducir audio y vídeo **sin esperar a la descarga completa** del archivo, optimizando la visualización de contenidos en red [7, 8].
+Debe distinguirse entre el **administrador del servicio** (quien instala y mantiene la plataforma técnica) y el **administrador de la lista**, que gestiona una lista concreta dentro del sistema.
 
-### Conceptos Técnicos Fundamentales
-* **Buffer (Memoria Intermedia):** Almacenamiento temporal que acumula datos antes de reproducirlos. Sirve para amortiguar los efectos del **jitter** (variaciones en el retardo de red) y evitar cortes [7, 9, 10].
-* **Codecs:** Algoritmos encargados de la codificación y el empaquetado del contenido [11].
-* **Segmentación:** El flujo de datos se divide en paquetes. El tamaño de estos influye en la eficiencia del ancho de banda y está limitado por la **MTU** de la red [12, 13].
+## Modos de suscripción y recepción
+Los sistemas modernos de listas permiten distintos modos de uso:
 
-### Protocolos de Red
-| Protocolo | Capa | Función y Características |
-| :--- | :--- | :--- |
-| **TCP** | Transporte | Fiable pero lento por el reconocimiento de paquetes. No permite **multicast** [11, 14]. |
-| **UDP** | Transporte | Rápido, sin confirmación de recepción. Ideal para evitar retrasos y para transmisiones **multicast** [11, 15]. |
-| **HTTP** | Aplicación | Usado en arquitecturas sin servidor. Fácil de escalar con **CDNs** [16, 17]. |
-| **RTMP** | Aplicación | Protocolo de Adobe que ofrece baja latencia sobre TCP [18]. |
-| **RTSP** | Aplicación | Controla la sesión (Play, Pause, Setup) [19]. |
-| **RTP** | Aplicación | Transporta la carga de datos. Usa marcas de tiempo para sincronizar audio y vídeo por separado [20]. |
-| **RTCP** | Aplicación | Monitoriza la calidad de la transmisión [19]. |
+- **Recepción individual**: se recibe cada mensaje conforme se envía.
+- **Resumen diario (digest)**: un único correo periódico con todos los mensajes.
+- **Solo web / sin correo**: el usuario no recibe correos pero puede consultar y participar desde una interfaz web.
+- **Solo lectura**: el usuario recibe mensajes pero no puede enviarlos.
 
-### Arquitecturas de Servicio
-1. **Típica:** Servidor de streaming dedicado y aplicaciones cliente específicas [16, 21].
-2. **Sin Servidor (Server-Less):** Utiliza un servidor web convencional (HTTP sobre TCP). Es económico y compatible, pero difícil de escalar a multicast [16, 17].
-3. **Sin Cliente (Client-Less):** El reproductor se integra en el navegador mediante **HTML5** o plugins (Java/Flash) [22].
+## Tipos de listas de distribución
 
----
+### Según el acceso a la suscripción
+- **Listas públicas**: cualquier persona puede suscribirse o darse de baja.
+- **Listas privadas**: la suscripción requiere aprobación del administrador.
 
-## 3. Listas de Distribución
+### Según los permisos de envío
+- **Listas abiertas**: cualquier persona puede enviar mensajes (no recomendado por riesgo de spam).
+- **Listas cerradas**: solo usuarios autorizados o el propietario pueden enviar mensajes.
+- **Listas moderadas**: los mensajes requieren aprobación previa antes de su distribución.
 
-Son mecanismos de difusión de información basados en el **correo electrónico** que facilitan la distribución de mensajes a múltiples destinatarios mediante una única dirección de envío [23].
+## Plataformas y servicios actuales
 
-### Roles y Gestión
-* **Administrador del Servicio:** Persona encargada de instalar y configurar el servidor (soporte técnico) [24].
-* **Administrador de la Lista:** Gestiona las altas/bajas de usuarios y modera los contenidos [24, 25].
+### Software clásico de listas
+- **Mailman**: software libre, muy utilizado en entornos GNU/Linux.
+- **LISTSERV**: solución comercial ampliamente implantada en entornos corporativos y académicos.
 
-### Clasificación de las Listas
-* **Según Suscripción:**
-    * **Públicas:** Suscripción automática mediante comandos de correo [26].
-    * **Privadas:** Requieren aprobación previa del propietario [26].
-* **Según Participación:**
-    * **Abiertas:** Cualquiera puede enviar mensajes, lo que conlleva riesgo de **spam** [27].
-    * **Cerradas:** Solo el propietario puede enviar mensajes (ej. fines informativos) [27].
-    * **Moderadas:** Los mensajes pasan por un filtro o moderador antes de su distribución [27].
+### Servicios en la nube y entornos modernos
+- **Google Groups** (Google Workspace)
+- **Microsoft 365 / Exchange Online**
+- **Grupos de correo en entornos cloud**
+- **Plataformas híbridas** (correo + web + archivo de mensajes)
 
-### Modos de Suscripción Especiales
-* **Resumen (Digest):** El usuario recibe un solo mensaje diario con todo lo publicado en la lista [28].
-* **No correo (Solo Web):** El usuario envía mensajes pero no los recibe en su buzón; los consulta a través de una interfaz web [28].
+Además, muchas organizaciones combinan listas de distribución con herramientas colaborativas como Microsoft Teams, Slack o plataformas de gestión de proyectos, aunque estas no sustituyen completamente al correo electrónico en comunicaciones formales.
 
-### Software de Implementación
-* **Software Libre:** **Mailman** (funciona sobre GNU/Linux con Postfix o Sendmail) [29].
-* **Software Propietario:** **LISTSERV**, Microsoft Exchange o hMailServer [29, 30].
+## Seguridad y protección de datos
+En el contexto actual, el uso de listas de distribución debe cumplir con la normativa vigente, especialmente:
+
+- **RGPD (Reglamento General de Protección de Datos)** en la Unión Europea.
+- Información clara al usuario sobre el uso de su dirección de correo.
+- Posibilidad sencilla de baja.
+- Uso responsable de direcciones visibles (CC, CCO, listas cerradas).
+- Medidas contra el spam y accesos no autorizados.
+
+## Conclusión
+Las listas de distribución siguen siendo una herramienta clave de comunicación, aunque han evolucionado desde sistemas de correo tradicionales hacia soluciones integradas en la nube. Su correcta gestión técnica, organizativa y legal es esencial para garantizar una comunicación eficaz, segura y conforme a la normativa actual.
