@@ -21,7 +21,7 @@
 ###### [Computación en la nube](docs1/Computacion_en_la_Nube.md)
 ###### [Listas de distribución](docs1/ListasDistribucion.md)
 ###### [Mensajería](docs1/Mensajeria.md)
-###### [Streaming](docs1/Streaming.md)
+###### [Streaming](docs1/streaming.md)
 
 
 
