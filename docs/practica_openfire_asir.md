@@ -1,4 +1,3 @@
-# Práctica ASIR  
 ## Despliegue de un servidor de mensajería XMPP (Openfire) con Docker
 
 ## 1. Objetivo
