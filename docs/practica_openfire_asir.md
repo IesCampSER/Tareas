@@ -139,9 +139,3 @@ docker rm openfire
 - Riesgos de exponer el servicio sin TLS  
 - Otros métodos de autenticación soportados por Openfire  
 
----
-
-## Nivel
-- Ciclo: **ASIR – 2.º curso**  
-- Tipo: Práctica técnica de despliegue de servicios  
-- Estado: Actualizada a contexto 2025–2026
