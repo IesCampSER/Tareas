@@ -68,14 +68,40 @@ Ejemplo: `profesorsri@asir.com`
   Permite al usuario acceder a su buzón.  
   Protocolos: POP3 e IMAP.
 
+### 4.3 ¿Cómo funciona el correo paso a paso?
+Este es el proceso simplificado:
+
+1. Escribes un correo en tu aplicación (Outlook, Gmail…).
+2. Tu programa lo envía a un **servidor de envío**.
+3. Ese servidor busca a qué servidor pertenece el destinatario.
+4. Lo envía al **servidor receptor**.
+5. La persona destinataria lo descarga en su móvil, ordenador o webmail.  
+
+### 4.4. ¿Qué aplicaciones puedo usar para leer correos?
+Existen dos formas:
+
+#### 🖥️ **Clientes (programas instalados)**
+- Outlook
+- Thunderbird
+- Apple Mail
+- EM Client
+
+#### 🌐 **Webmail (en navegador)**
+- Gmail Web
+- Outlook Web
+- Proton Mail Web
+
+Su función es la misma: escribir, leer, ordenar y archivar correos.
+
 ---
 
 ## 5. Protocolos y puertos
 
 ### Protocolos principales
-- **SMTP / ESMTP**: envío de correo.
-- **POP3**: descarga de mensajes.
-- **IMAP4**: acceso remoto al buzón.
+- **SMTP / ESMTP**: envío de correo. Se usa cuando mandas un correo. Equivale al cartero que recoge tu carta.
+- **POP3**: descarga de mensajes. Antiguo, aún en uso, pero menos recomendable.
+- **IMAP4**: acceso remoto al buzón. Permite ver el correo sin descargarlo definitivamente. Todo queda en el servidor.
+Ideal para móviles + ordenador.
 
 ### Puertos habituales
 - SMTP entre servidores: **25**
@@ -106,16 +132,14 @@ Ejemplo: `profesorsri@asir.com`
 ## 7. Seguridad en el correo electrónico
 
 Principales problemas:
-- SPAM
-- Phishing
-- Falta de cifrado
-- Suplantación de identidad
+Hoy en día hay muchos riesgos: spam, virus, suplantaciones (phishing)… Para proteger a los usuarios, los servidores usan tecnologías como:
 
-Soluciones habituales:
-- **SMTP AUTH (SASL)**: autenticación de usuarios
-- **STARTTLS / SSL/TLS**: cifrado de comunicaciones
-- **SPF**: control de servidores autorizados
-- Sistemas antivirus y antispam
+- **SPF** → permite saber si un correo lo ha enviado un servidor autorizado.
+- **DKIM** → añade una firma digital al correo para evitar modificaciones.
+- **DMARC** → decide qué hacer si un mensaje parece falso.
+- **TLS** → cifra la comunicación entre servidores.
+
+Todo esto actúa sin que tú tengas que hacer nada.
 
 ---
 
@@ -127,27 +151,20 @@ Un servidor de correo electrónico permite:
 - Almacenar
 - Reenviar mensajes
 
-Servicios principales:
-- MTA
-- MDA
-- MAA
-
 Ejemplos de servidores:
 - Postfix
 - Sendmail
 - Exim
 - Microsoft Exchange
 
----
+---  
 
-## 9. Open Relay y Smart Host
-
-### Open Relay
-Servidor SMTP mal configurado que permite reenviar correo sin restricciones.  
-Riesgo elevado de uso para SPAM.
-
-### Smart Host
-Servidor que permite el reenvío bajo condiciones controladas (autenticación, IPs, dominios).
+## 9. Consejos prácticos
+- No abras archivos de desconocidos.
+- Comprueba siempre el remitente.
+- Usa contraseñas seguras y, si es posible, **doble autenticación**.
+- Mantén tus dispositivos actualizados.
+- No pulses enlaces sospechosos.
 
 ---
 
