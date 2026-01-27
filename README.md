@@ -19,9 +19,9 @@
 
 ##### DOCUMENTACIÓN
 ###### [Computación en la nube](docs1/Computacion_en_la_Nube.md)
-###### [Listas de distribución](docs1/ListasDistribucion.md)
-###### [Mensajería](docs1/mensajeria.md)
-###### [Streaming](docs1/streaming.md)
+###### [Listas de distribución](docs/mensajeria/listas-distribucion.md)
+###### [Mensajería](docs/mensajeria/mensajeria.md)
+###### [Streaming](docs/audio-video/streaming.md)
 
 
 
