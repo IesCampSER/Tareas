@@ -1,5 +1,5 @@
 ##### TAREAS ASIGNATURA SERVICIOS EN RED
-###### [DHCP](docs/DHCP.md)
+###### [DHCP](docs/dhcp/dhcp.md)
 ###### [DNS bind](docs/dnsbind.md)
 ###### [DNS dnsmasq](docs/dnsmasq.md)
 ###### [Servidor de correo postfix](docs/correo_contenedor.md)
