@@ -5,7 +5,7 @@
 ###### [Servidor de correo postfix](docs/correo/correo_contenedor.md)
 
 ##### GUIAS PARA REALIZAR LAS TAREAS
-###### [Guia FTP vsftp](docs/ftp/vsftp.md)
+###### [Guia FTP vsftp](docs/ftp/vsftpd.md)
 ###### [Comandos para obtener información de puertos](docs/puertos-comandos.md)
 ###### [Reenvio puertos VB](docs/puertosVB.md)
 ###### [Guia Instalación Nginx](docs/http/instalacion_nginx.md)
