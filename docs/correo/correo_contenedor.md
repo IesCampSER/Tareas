@@ -19,7 +19,7 @@ $ docker pull ubuntu:20.04
 Crea un contenedor y ejecutalo exponiendo el puerto 25 (SMTP) y el puerto 143 (IMAP):  
 
 ```bash
-sudo docker run -dt --name postfix -p 25:25 -p 145:143 ubuntu:20.04
+sudo docker run -dt --name postfix -p 25:25 -p 143:143 ubuntu:20.04
 ```
 
 Abre un terminal dentro del contenedor:  
