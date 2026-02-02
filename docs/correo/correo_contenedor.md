@@ -16,9 +16,11 @@ Vamos a instalar un servidor de correo pero esta vez en lugar de utilizar un má
 ## Paso 0: Creación del contenedor  
 Descarga la imagen de Ubuntu:20.04  
 $ docker pull ubuntu:20.04  
-Crea un contenedor y ejecutalo exponiendo el puerto 25 (SMTP):  
+Crea un contenedor y ejecutalo exponiendo el puerto 25 (SMTP) y el puerto 143 (IMAP):  
 
-![Imagen bind](/img/correo1.png)
+```bash
+sudo docker run -dt --name postfix -p 25:25 -p 145:143 ubuntu:20.04
+```
 
 Abre un terminal dentro del contenedor:  
 ```bash
