@@ -2,7 +2,7 @@
 ###### [DHCP](docs/dhcp/dhcp.md)
 ###### [DNS bind](docs/dns/dnsbind.md)
 ###### [DNS dnsmasq](docs/dns/dnsmasq.md)
-###### [Servidor de correo postfix](docs/correo/instalacion_postfix_ubuntu.md)
+###### [Servidor de correo postfix](docs/correo/correo_contenedor.md)
 
 ##### GUIAS PARA REALIZAR LAS TAREAS
 ###### [Guia FTP vsftp](docs/ftp/vsftpd.md)
