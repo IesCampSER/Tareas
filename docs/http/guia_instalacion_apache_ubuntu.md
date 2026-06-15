@@ -126,8 +126,18 @@ La forma de trabajar entre estos directorios es a través de un enlace simbólic
    ```bash
    sudo a2dissite 000-default.conf
    ```
+   
+6. Verifica la configuración:
 
-6. Recarga Apache para aplicar los cambios:
+   ```bash
+   apache2ctl configtest
+   ```
+   o
+   ```bash
+   apachectl configtest
+   ```
+
+7. Recarga Apache para aplicar los cambios:
 
    ```bash
    sudo systemctl reload apache2
