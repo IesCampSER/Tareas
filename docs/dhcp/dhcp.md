@@ -16,7 +16,7 @@ Dicho de otra manera, los valores de los parámetros especificados al principio 
 
 Los rangos de direcciones IP se especifican en secciones que empiezan con la palabra clave 'subnet' seguido de la dirección de red de la subred, continua con la palabra 'netmask' seguido de la máscara de red. A continuación estará la lista de parámetros para dicha sección encerrados entre llaves.
 
-**Atención**: El rango de cesión debe pertenecer a la misma subred a la que pertenece la IP del servidor, es necesario para que los clientes puedan comunicarse con el servidor DHCP para procesar las renovaciones. Ejemplo, si un servidor tiene la IP 192.168.1.1/24, no puede ceder direcciones del rango 10.0.0.0/8 porque dicho rango está fuera del alcance de la subred del servidor.
+**Atención**: En esta práctica el rango DHCP deberá pertenecer a la misma red que la interfaz del servidor. 
 
 El  archivo /etc/dhcp/dhcpd.conf  es  bastante  largo. A partir de  la línea  30 aparecen declaraciones de subnet comentadas con #, pues a partir de: log-facility local7; podemos dar de alta la sección subnet donde queramos.
 
@@ -121,12 +121,16 @@ para reiniciar el demonio. Una vez reiniciado el servicio, se comprueba que est�
 
 **Del cliente:**
 
-- un  terminal  con  el  comando  ipconfig/ifconfig/ip  address  show  ejecutado,  para comprobar la configuración que ha obtenido del servidor.
+- un  terminal  con  el  comando  ipconfig/ip a/ifconfig (este último para distribuciones antiguas) ejecutado,  para comprobar la configuración que ha obtenido del servidor.
 
 **Del servidor:**
 
-- Captura de pantalla del contenido de log del sistema filtrando las búsquedas con grep para ver las concesiones del DHCP
+- Captura de pantalla del contenido de log del sistema
 
+```
+journalctl -u isc-dhcp-server
+```
+ó  
 ```
 tail -f /var/log/syslog | grep dhcp
 ```
