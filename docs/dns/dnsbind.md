@@ -115,17 +115,12 @@ Editamos el archivo: /etc/bind/db.20.168.192. Ejemplo incompleto
 ```
 named-checkzone sercamp.org /etc/bind/sercamp.org.db
 named-checkzone 20.168.192.in-addr.arpa /etc/bind/db.20.168.192
+named-checkconf
 ```
 
 Una vez comprobado que no existen errores (en el caso de que sí existan se puede mirar el archivo /var/log/syslog), se realiza el reinicio del servicio bind9.
 
-Distribuciones anteriores a Ubuntu 20:
-
-- Arranque: /etc/init.d/bind9 start
-- Parada: /etc/init.d/bind9 stop
-- Reinicio: /etc/init.d/bind9 restart
-
-Ubuntu 20, 22:
+Ubuntu 20, 22, 24:
 
 - Arranque: `service named start` o bien `systemctl named start`
 - Parada: `service named stop` o bien `systemctl named stop`
@@ -153,7 +148,8 @@ captura de pantalla desde el cliente haciendo:
 - $dig sercamp.org
 - $nslookup 192.168.20.10
   
-captura de pantalla desde el servidor con cada uno de los archivos de configuración modificados para realizar la tarea. 
+captura de pantalla desde el servidor con cada uno de los archivos de configuración modificados para realizar la tarea.  
+
 
 ### IMPORTANTE
 
@@ -178,11 +174,21 @@ nslookup ftp.sercamp.org 192.168.20.5
 ![Imagen bind](/img/dns7.png)
 
 Esta caché cuando configuramos nuestro servidor DNS local a veces nos juega malas pasadas, si busco un registro de mi dominio y no lo encuentra (es posible que estemos haciendo pruebas y tengamos algun error) almacena en caché que ese registro no existe, luego podemos tener solucionado el problema y volvernos locos porque sigue diciendo que no encuentra el registro. Podemos solucionar esto limpiando la caché, al igual que se ha comentado con anterioridad el comando dependerá de la distribución, os pongo aquí el ejemplo para ubuntu 20
-
-sudo systemd-resolve --flush-caches
+versiones anteriores
+sudo systemd-resolve --flush-caches  
+ubuntu 24  
+```
+sudo resolvectl flush-caches
+```
 
 con este comando liberas la cache, fijaros como lo hago en mi equipo
 
 ![Imagen bind](/img/dns8.png)
 
-primero miro con systemctl is-active systemd-resolved si mi equipo tiene la caché activada, como veis en la imagen la respuesta es que sí (active), después compruebo con systemd-resolve --statistics que el tamaño de mi caché es 164 y después con sudo systemd-resolve --flush-caches libero la caché. La próxima vez que ejecute las estadisticas en current cache size pondrá 0
+primero miro con systemctl is-active systemd-resolved si mi equipo tiene la caché activada, como veis en la imagen la respuesta es que sí (active), después compruebo con systemd-resolve --statistics
+
+ubuntu 24  
+```
+resolvectl statistics
+```  
+que el tamaño de mi caché es 164 y después con sudo systemd-resolve --flush-caches libero la caché. La próxima vez que ejecute las estadisticas en current cache size pondrá 0
