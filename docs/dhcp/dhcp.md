@@ -117,6 +117,13 @@ isc-dhcp-server restart
 
 para reiniciar el demonio. Una vez reiniciado el servicio, se comprueba que está funcionando el Servidor DHCP en los clientes.
 
+Prueba a renovar la concesión:  
+
+```
+sudo dhclient -r
+sudo dhclient  
+```
+
 ## **PARA ENTREGAR. Capturas de pantalla de:**
 
 **Del cliente:**
