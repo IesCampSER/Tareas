@@ -39,7 +39,9 @@ Durante este curso vamos a instalar servicios de red, necesitaremos siempre un s
 los servidores que instalemos en las prácticas y los servidores que posee nuestra  red.  Por  ej  cuando  instalemos  un  S.DHCP es  muy  probable  que
 vuestro router de casa también sea S.DHCP .  
 
-Resumiendo, podemos montar diferentes escenarios, cada uno tiene unas ventajas y unos inconvenientes. Lo importante de esta tarea es que tengáis muy claro cómo se van a comportar las máquinas dependiendo del adaptador que uséis, así durante el curso podréis ir modificando según vuestras necesidades.
+Resumiendo, podemos montar diferentes escenarios, cada uno tiene unas ventajas y unos inconvenientes. Lo importante de esta tarea es que tengáis muy claro cómo se van a comportar las máquinas dependiendo del adaptador que uséis, así durante el curso podréis ir modificando según vuestras necesidades. Para comprender mejor este punto estudia la imagen que te enseño y asegurate de entenderla bien
+
+![Modos Red VBox](../../img/RedVB.png)
 
 ### Tarea 3. Crea una red Red NAT en tu VirtualBox y configura su servidor dhcp para que asigne ip’s en la red: 192.168.20.0/24   
 Así pues de momento tendremos una red "aislada" con equipos que tendrán ip’s fijas con  un  router  virtual  (router  del  VirtualBox)  que  asignará  ip’s  en  la  red
