@@ -99,7 +99,16 @@ $sudo cp archivo\_en\_cuestion archivo\_en\_cuestion.bak
 
 Con estos datos conseguimos que se efectue automáticamente la configuración de red y de dominio de nuestros clientes. Para ello en el cliente haz lo necesario para que reciba la IP dinámicamente.
 
-Para que se hagan efectivos los cambios, es necesario reiniciar el servicio DHCP. Para ello, se empleará el comando
+Después de realizar cambios es una buena constumbre comprobar el fichero antes de reiniciar
+```
+sudo dhcpd -t
+```
+o  
+```
+sudo dhcpd -t -cf /etc/dhcp/dhcpd.conf
+```
+
+Para que se hagan efectivos los cambios, es necesario reiniciar el servicio DHCP. Para ello, se empleará el siguiente comando para reiniciar el demonio
 
 ```
 systemctl restart isc-dhcp-server
@@ -115,9 +124,15 @@ isc-dhcp-server restart
 /etc/init.d/isc-dhcp-server restart
 ```
 
-para reiniciar el demonio. Una vez reiniciado el servicio, se comprueba que está funcionando el Servidor DHCP en los clientes.
+Una vez reiniciado el servicio se comprueba que el servidor está escuchando en el puerto 67
 
-Si quieres renovar la concesión puedes hacerlo:  
+```
+ss -lunp | grep 67
+```
+
+Y ahora se comprueba que está funcionando el Servidor DHCP en los clientes.
+
+Si quisieras renovar la concesión puedes hacerlo:  
 
 ```
 sudo dhclient -r
