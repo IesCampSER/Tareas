@@ -50,6 +50,8 @@ Con esta opción, en los temas en los que sea posible utilizaremos una única m�
 RECUERDA:   
 Para hacer este punto, abrimos VirtualBox y creamos una red  Red NAT, para ello vamos a archivo-preferencias-red, una vez dentro de red creamos una red pulsando el botón de agregar y luego editamos la red poniéndole el nombre y la dirección que deseemos:  
 
+![RedNat crear](/img/VBox1.png)
+
 FIJATE HE  DEJADO  DESHABILITADO  EL  SERVIDOR  DHCP  PORQUE  DE MOMENTO NO LO UTILIZAREMOS, es más, no queremos hacerlo porque el primer servicio que instalaremos será un nuestro propio servidor DHCP. 
 
 ### Tarea 4. Cambia todos los adaptadores de tus máquinas a modo de red Red NAT.  
