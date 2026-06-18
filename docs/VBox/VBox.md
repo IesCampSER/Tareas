@@ -52,7 +52,7 @@ Para hacer este punto, abrimos VirtualBox y creamos una red  Red NAT, para ello 
 
 <img src="../img/VBox1.png" width=600>  
 
-![RedNat crear](../img/VBox1.png)
+![RedNat crear](../../img/Vbox1.png)
 
 FIJATE HE  DEJADO  DESHABILITADO  EL  SERVIDOR  DHCP  PORQUE  DE MOMENTO NO LO UTILIZAREMOS, es más, no queremos hacerlo porque el primer servicio que instalaremos será un nuestro propio servidor DHCP. 
 
