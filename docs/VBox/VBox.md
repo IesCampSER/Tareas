@@ -48,11 +48,13 @@ Así pues de momento tendremos una red "aislada" con equipos que tendrán ip’s
 Con esta opción, en los temas en los que sea posible utilizaremos una única máquina que hará de servidor y abriremos el puerto correspondiente del router virtual para que de servicio a los clientes.  
 
 RECUERDA:   
-Para hacer este punto, abrimos VirtualBox y creamos una red  Red NAT, para ello vamos a archivo-preferencias-red, una vez dentro de red creamos una red pulsando el botón de agregar y luego editamos la red poniéndole el nombre y la dirección que deseemos:  
-
-<img src="../img/VBox1.png" width=600>  
+Para hacer este punto, abrimos VirtualBox y creamos una red  Red NAT, para ello vamos a archivo-preferencias-red, una vez dentro de red creamos una red pulsando el botón de agregar
 
 ![RedNat crear](../../img/Vbox1.png)
+
+ y luego editamos la red poniéndole el nombre y la dirección que deseemos:  
+
+![RedNat configurar](../../img/Vbox2.png)
 
 FIJATE HE  DEJADO  DESHABILITADO  EL  SERVIDOR  DHCP  PORQUE  DE MOMENTO NO LO UTILIZAREMOS, es más, no queremos hacerlo porque el primer servicio que instalaremos será un nuestro propio servidor DHCP. 
 
@@ -78,7 +80,9 @@ vboxmanage list natnets
 Te situas en la carpeta virtualBox y ejecutas  
 .\VBoxManage list natnets  
 este comando te lista la configuración de tus redes RedNat del virtualBox. En la siguiente pantalla tienes un ejemplo de mi configuración, como verás yo tengo la red
-192.168.10.0/24 en tu caso debe salirte la red 192.168.20.0/24 que es la que acabas de configurar
+192.168.10.0/24 en tu caso debe salirte la red 192.168.20.0/24 que es la que acabas de configurar  
+
+![VBoxmanage](../../img/VBox3.png)
 
 **Para entregar.**  
 Envía alguna imágen/es donde se pueda apreciar como se comunican las máquinas virtuales entre si, por ejemplo puedes hacer ping entre ellas, y comprueba que tienes salida a internet desde todas las máquinas, si no es así no continúes con las tareas hasta que el escenario funcione y sea estable.
