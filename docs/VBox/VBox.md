@@ -10,14 +10,16 @@ Recuerda que estas máquinas sólo deberías utilizarlas en el módulo de Servic
 1. Si ya tienes tu usuario y contraseña de Microsoft 365 en el primer tema tienes un manual de descarga de SW desde Microsoft 365  
 Como sabes sólo tenemos una licencia por sistema operativo de windows, así que para trabajar todo el curso te recomiendo que instales el S.O pero no lo actives
 2. Desde este enlace puedes descargar iso de evaluación, tienes 90 días para utilizar estas iso,  
-https://www.microsoft.com/es-es/evalcenter/   
+https://www.microsoft.com/es-es/evalcenter/
+
 el procedimiento será el siguiente:  
 • descargas la iso  
 • creas la máquina virtual  
 • generas una ova con la máquina recien instalada y te la guardas  
+
 cada vez que necesites un máquina nueva porque te ha vencido la licencia o porque está corrupta recurres a la ova generada y te creas una máquina nueva a partir de ésta  
 
-**Ubuntu de la página **  
+**Ubuntu de la página**  
 www.ubuntu.com.  
 El uso de los S.O de windows dependerá de los recursos de vuestra máquina física.  
 
