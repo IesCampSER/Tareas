@@ -43,9 +43,9 @@ Resumiendo, podemos montar diferentes escenarios, cada uno tiene unas ventajas y
 
 ![Modos Red VBox](../../img/RedVB.png)  
 
-*MODO PUENTE*: Estoy suponiendo que tu router de casa da IP en la red 192.168.20.0/24, con esto tus máquinas virtuales pueden comunicarse con tus máquinas físicas de casa. Si tu router de casa da ip en otra red distinta y tu pones a tus máquinas virtuales una ip fija en la red 192.168.20.0/24 no habrá comunicación entre ellas ni salida a internet desde la MV
-*MODO NAT*: cada una de las MV tiene su propio router virtual, se crea una red privada distinta para cada MV con salida a internet, es decir, las MV no se ven entre ellas por mucho que estén en la misma red lógica porque son redes diferentes a nivel "físico"
-*MODO RED NAT*: en este caso hay un único router virtual para todas las MV que pertenecen a la misma REDNAT con lo cual las MV si se ven entre si. Este es el modo que utilizaremos porque es el más completo.
+**MODO PUENTE**: Estoy suponiendo que tu router de casa da IP en la red 192.168.20.0/24, con esto tus máquinas virtuales pueden comunicarse con tus máquinas físicas de casa. Si tu router de casa da ip en otra red distinta y tu pones a tus máquinas virtuales una ip fija en la red 192.168.20.0/24 no habrá comunicación entre ellas ni salida a internet desde la MV  
+**MODO NAT**: cada una de las MV tiene su propio router virtual, se crea una red privada distinta para cada MV con salida a internet, es decir, las MV no se ven entre ellas por mucho que estén en la misma red lógica porque son redes diferentes a nivel "físico"  
+**MODO RED NAT**: en este caso hay un único router virtual para todas las MV que pertenecen a la misma REDNAT con lo cual las MV si se ven entre si. Este es el modo que utilizaremos porque es el más completo.
 
 
 
