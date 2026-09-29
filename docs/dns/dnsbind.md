@@ -174,21 +174,35 @@ nslookup ftp.sercamp.org 192.168.20.5
 ![Imagen bind](/img/dns7.png)
 
 Esta caché cuando configuramos nuestro servidor DNS local a veces nos juega malas pasadas, si busco un registro de mi dominio y no lo encuentra (es posible que estemos haciendo pruebas y tengamos algun error) almacena en caché que ese registro no existe, luego podemos tener solucionado el problema y volvernos locos porque sigue diciendo que no encuentra el registro. Podemos solucionar esto limpiando la caché, al igual que se ha comentado con anterioridad el comando dependerá de la distribución, os pongo aquí el ejemplo para ubuntu 20
-versiones anteriores
-sudo systemd-resolve --flush-caches  
-ubuntu 24  
+
+fijaros como lo hago en mi equipo
+
+![Imagen bind](/img/dns8.png)
+
+primero miro con  
+
+> systemctl is-active systemd-resolved
+ 
+si mi equipo tiene la caché activada  
+como veis en la imagen la respuesta es que sí (active), después compruebo con  
+
+> systemd-resolve --statistics
+
+que el tamaño de mi caché es 164 y después con  
+
+> sudo systemd-resolve --flush-caches
+
+libero la caché. La próxima vez que ejecute las estadisticas en current cache size pondrá 0
+ 
+**ubuntu 24**   
+```
+systemctl is-active systemd-resolved
+```
+```
+resolvectl statistics
+```
 ```
 sudo resolvectl flush-caches
 ```
 
-con este comando liberas la cache, fijaros como lo hago en mi equipo
 
-![Imagen bind](/img/dns8.png)
-
-primero miro con systemctl is-active systemd-resolved si mi equipo tiene la caché activada, como veis en la imagen la respuesta es que sí (active), después compruebo con systemd-resolve --statistics
-
-ubuntu 24  
-```
-resolvectl statistics
-```  
-que el tamaño de mi caché es 164 y después con sudo systemd-resolve --flush-caches libero la caché. La próxima vez que ejecute las estadisticas en current cache size pondrá 0
