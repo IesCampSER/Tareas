@@ -7,26 +7,40 @@ Compruebo que tengo el cliente y el servidor en la misma red RedNat, configurado
 
 ##### PASO 1. Instalo
 
-```sudo apt update```
-```sudo apt install dnsmasq```
+```
+sudo apt update
+```  
+```
+sudo apt install dnsmasq
+```
 
 Al hacer esto compruebo que el dnsmasq da un error porque escucha en el puerto 53 y ya tiene un servicio escuchando en ese puerto asi que desactivo el servicio
 
-```sudo systemctl stop systemd-resolved```
+```
+sudo systemctl stop systemd-resolved
+```
 
-```sudo systemctl disable systemd-resolved```
+```
+sudo systemctl disable systemd-resolved
+```
 
-```sudo systemctl mask systemd-resolved```
+```
+sudo systemctl mask systemd-resolved
+```
 
 ##### PASO 2. Arranco
 
 una vez desactivado arranco dnsmasq
 
-``` sudo systemctl start dnsmasq```
+```
+sudo systemctl start dnsmasq
+```
 
 compruebo status
 
-``` sudo systemctl status dnsmasq```
+```
+sudo systemctl status dnsmasq
+```
 
 ![Imagen dnsmasq](/img/dnsmasq1.png)
 
@@ -46,7 +60,9 @@ Modifico el archivo /etc/hosts del servidor para hacer el dns master
 
 reinicio el servidor dnsmasq
 
-``` sudo systemctl restart dnsmasq```
+```
+sudo systemctl restart dnsmasq
+```
 
 ##### PASO 4. Compruebo
 
