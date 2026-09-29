@@ -16,9 +16,9 @@ apt update
 
 Los ficheros de configuración de bind están en el directorio /etc/bind.
 
-Ficheros db: contienen 3 zonas inversas: 0.in-addr.arpa, 127.in-addr.arppa y 255.in-addr.arpa. Estas tres zonas están configuradas y hacen referencia al nodo local. Además contiene una zona directa vacía db.empty que usaremos como punto de partida.
+**Ficheros db**: contienen 3 zonas inversas: 0.in-addr.arpa, 127.in-addr.arppa y 255.in-addr.arpa. Estas tres zonas están configuradas y hacen referencia al nodo local. Además contiene una zona directa vacía db.empty que usaremos como punto de partida.
 
-Ficheros named: hacen referencia a los ficheros de configuración del servidor. Podría configurarse todo en el fichero named.conf pero no se hará así, el fichero named.conf no se debe tocar, editaremos el named.conf.options para configurar.
+**Ficheros named**: hacen referencia a los ficheros de configuración del servidor. Podría configurarse todo en el fichero named.conf pero no se hará así, el fichero named.conf no se debe tocar, editaremos el named.conf.options para configurar.
 
 Importante señalar que el proceso del servidor DNS se llama named y se ejecuta como el usuario named.
 
