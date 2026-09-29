@@ -1,9 +1,9 @@
 ### Tarea 1. Crea las siguientes máquinas virtuales (en esta asignatura nunca recomiendo últimas versiones de los S.O)
-• Un Windows Server con el nombre ServWApellido   
-• Ubuntu 22.04 o superior sin escritorio gráfico con el nombre ServLApellido  
+• Un Windows Server con el nombre SerWApellido   
+• Ubuntu 22.04 o superior sin escritorio gráfico con el nombre SerLApellido  
 • Ubuntu 22.04 o superior (Desktop) con el nombre CliLApellido   
 • Un cliente Windows con el nombre CliwApellido  
-
+Sustituye Apellido por tu primer apellido o parte si es muy largo. Por ejemplo mi servidor de Linus sería SerLTamarit.  
 Recuerda que estas máquinas sólo deberías utilizarlas en el módulo de Servicios en Red para no tener problemas con las instalaciones que hagas en otros módulos.   
 
 **Los sistemas operativos Windows los puedes descargar de dos sitios:**
