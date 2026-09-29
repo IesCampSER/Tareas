@@ -32,11 +32,11 @@ $sudo nano /etc/bind/named.conf.options
 
 Con esta opción se especifica que las consultas que no pueda responder nuestro servidor sean reenviadas a la IP 8.8.8.8.
 
-Comenta la línea que pone dnssec-verification auto; o pon no en vez de auto para que funcione la resolución de nombres públicos de Internet,
+Comenta la línea que pone dnssec-verification auto; o pon **no** en vez de auto para que funcione la resolución de nombres públicos de Internet,
 
 Edita el archivo /etc/bind/named.conf y comenta la linea que hace referencia a named.conf.default-zones.
 
-El servidor DNS tiene muchas más opciones que permiten ajustar la configuración.
+El servidor DNS tiene muchas más opciones que permiten ajustar la configuración, nosotros nos centramos sólo en estas.  
 
 ### PASO 3. Crear una zona primaria. Vamos a crear la zona sercamp.org
 
