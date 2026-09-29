@@ -86,8 +86,6 @@ Aquí dejo también varios enlaces de la instalación y configuración de dnsmas
 
 - http://recursostic.educacion.es/observatorio/web/gl/software/software-general/638-servidor-dns-sencillo-en-linux-con-dnsmasq
 
-- https://www.guia-ubuntu.com/index.php/Dnsmasq,_servidor_DNS_y_DHCP
-
 - https://wiki.archlinux.org/index.php/Dnsmasq_(Espa%C3%B1ol)
 
 #### ACTIVIDAD 1
@@ -102,7 +100,7 @@ Comprueba que tienes el cliente y el servidor en la misma red RedNat, configurad
 - el equipo SerLApellido tendrá como servidor DNS el de tu operador o el de google (puedes configurarlo desde los archivos o desde el NetworkManager, nunca desde los dos)
 - el equipo cliente tendrá como servidor DNS el 192.168.20.7
 
-Los dos equipos se ven entre ellos y puedes desde el servidor salir a internet
+Los dos equipos se ven entre ellos y desde el servidor puedes salir a internet
 
 Haz una consulta desde el servidor a una web externa (por ej www.marca.com) para ver el tiempo que tarda en contestar a una petición (guarda la pantalla). Ejemplo $dig marca.com
 
@@ -124,10 +122,12 @@ Convierte ahora el servidor dnsmask en maestro:
 - incluye las ip de tus pc’s
 - reinicia el servidor dns y comprueba que puedes solicitar la ip de un equipo del dominio haz un nslookup:
 
+```
 nslookup pc1.asir.org
-
+```
+```
 nslookup pc1
-
+```
 ambas peticiones deberían devolverte el mismo resultado
 
 ##### PASO 5.
