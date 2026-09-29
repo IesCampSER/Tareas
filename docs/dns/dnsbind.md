@@ -90,12 +90,12 @@ NS es el servidor de nombres, aunque aparece en el SOA es necesario especificarl
 
 A: se han especificado dos direcciones IP, la primera se refiere al servidor de nombres, la segunda es un equipo. Los nombres se pueden especificar aquí con el FQDN o no. En el ejemplo aparecen con el FQDN pero es lo mismo poner cualquiera de estas dos cosas:
 
-dns.sercamp.org. IN A 192.168.20.5
+dns.sercamp.org. IN A 192.168.20.5   
 dns IN A 192.168.20.5
 
 Si no lleva el punto final quiere decir que no está completamente cualificado (FQDN). A la hora de procesar el fichero es lo mismo poner
 
-dns
+dns   
 dns.sercamp.org.
 
 Es decir, si no lleva el punto final, no está completamente cualificado, así que se le añadirá el dominio en nuestro caso sercamp.org
