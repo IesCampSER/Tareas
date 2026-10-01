@@ -1220,19 +1220,4 @@ journalctl -u bind9
 
 ---
 
-# 39. Resumen
-
-DNS es un servicio distribuido y jerárquico. En una infraestructura profesional debe diseñarse teniendo en cuenta:
-
-- Resolución de nombres.
-- Autoridad sobre las zonas.
-- Recursión.
-- Caché.
-- Redundancia.
-- Delegación.
-- Transferencias de zona.
-- Seguridad.
-- Diagnóstico.
-- DNSSEC.
-
 En ASIR, el objetivo no es únicamente saber instalar BIND9, sino comprender cómo participa DNS en una infraestructura de red y ser capaz de administrar, verificar y solucionar problemas del servicio.
