@@ -70,7 +70,7 @@ El establecimiento de una conexión SSH implica, de forma simplificada:
 7. Se autentica al usuario, por ejemplo mediante contraseña o mediante claves públicas.
 8. Se inicia la sesión remota.
 
-![Esquema del establecimiento de una conexión SSH](img/ssh1.jpg)
+![Esquema del establecimiento de una conexión SSH](../../img/ssh1.jpg)  
 
 ### Verificación de la identidad del servidor
 
@@ -199,9 +199,6 @@ El funcionamiento conceptual es:
 3. La aplicación gráfica se ejecuta en la máquina remota.
 4. La interfaz gráfica se muestra en la máquina local a través del canal SSH.
 
-![Comunicación X11 sin utilizar el reenvío SSH](img/ssh3.png)
-
-![Reenvío X11 mediante SSH](img/ssh4.png)
 
 Una forma de ejecutar una aplicación gráfica remota es:
 
