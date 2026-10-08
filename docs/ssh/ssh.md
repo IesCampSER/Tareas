@@ -70,7 +70,7 @@ El establecimiento de una conexión SSH implica, de forma simplificada:
 7. Se autentica al usuario, por ejemplo mediante contraseña o mediante claves públicas.
 8. Se inicia la sesión remota.
 
-![Esquema del establecimiento de una conexión SSH](img/sh1.png)
+![Esquema del establecimiento de una conexión SSH](img/ssh1.jpg)
 
 ### Verificación de la identidad del servidor
 
@@ -86,7 +86,7 @@ SSH permite crear un **canal seguro** y utilizarlo para transportar determinadas
 
 El procedimiento consiste en crear un túnel por el que viajen los datos de manera segura. SSH recibe los datos en un extremo y los reenvía por el canal seguro hacia el otro extremo.
 
-![Ejemplo de túnel SSH mediante reenvío de puertos](img/ssh2.png)
+![Ejemplo de túnel SSH mediante reenvío de puertos](img/ssh2.jpg)
 
 El reenvío de puertos puede ser interesante para:
 
