@@ -43,7 +43,7 @@ Si fuera necesario, puedes iniciarlo y habilitarlo para que arranque automática
 sudo systemctl enable --now ssh
 ```
 
-![Esquema de conexión SSH entre cliente y servidor](/../img/ssh3.jpg)
+![Esquema de conexión SSH entre cliente y servidor](../../img/ssh3.jpg)
 
 
 ### 2. Conectarse desde el cliente Linux
@@ -142,13 +142,13 @@ Los ejemplos siguientes utilizan nombres e IP diferentes a los de tu práctica:
 - Para desconectarte, ejecuta `exit`.
 
 
-![Ejemplo de una sesión SSH en el terminal](/../img/ssh4.jpg)
+![Ejemplo de una sesión SSH en el terminal](../../img/ssh4.jpg)
 
 #### Acceso mediante PuTTY
 
 El ejemplo de la imagen muestra una conexión desde el cliente a un servidor mediante PuTTY, usando el puerto 22.
 
-![Ejemplo de conexión con PuTTY](/../img/ssh5.jpg)
+![Ejemplo de conexión con PuTTY](../../img/ssh5.jpg)
 
 
 ### Entrega de la actividad 1
