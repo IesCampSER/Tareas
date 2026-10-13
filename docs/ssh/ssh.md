@@ -212,10 +212,6 @@ También puede utilizarse `-Y` en determinados escenarios en los que se necesita
 ssh -Y usuario@maquina_remota xterm
 ```
 
-> **Nota:** X11 forwarding sigue existiendo, pero es una tecnología especializada. Para una práctica de SMR puede ser útil como ejemplo de reenvío a través de SSH.
-
----
-
 ## 3.3. Reenvío por TCP/IP
 
 SSH permite reenviar conexiones TCP mediante un canal cifrado.
