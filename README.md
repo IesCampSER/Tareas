@@ -1,8 +1,9 @@
 ##### TAREAS ASIGNATURA SERVICIOS EN RED
+###### [Virtual Box](docs/VBox/VBox.md)
 ###### [DHCP](docs/dhcp/dhcp.md)
 ###### [DNS bind](docs/dns/dnsbind.md)
 ###### [DNS dnsmasq](docs/dns/dnsmasq.md)
-###### [Servidor de correo postfix](docs/correo/correo_contenedor.md)
+###### [SSH](docs/dns/ssh-tarea.md)
 
 ##### GUIAS PARA REALIZAR LAS TAREAS
 ###### [Guia FTP vsftp](docs/ftp/vsftpd.md)
@@ -17,7 +18,11 @@
 ###### [Configuracion Netplan wifi ubuntu 22 desde terminal](docs/Configuracion_Netplan_WiFi.md)
 
 ##### DOCUMENTACIÓN
+###### [DNS ASIR](docs/dns/dnsASIR.md)
+###### [DNS SMR](docs/dns/dns.md)
+###### [SSH](docs/ssh/ssh.md)
 ###### [Computación en la nube](docs/Computacion_en_la_Nube.md)
+###### [Correo](docs/correo/correo.md)
 ###### [Listas de distribución](docs/mensajeria/listas-distribucion.md)
 ###### [Mensajería](docs/mensajeria/mensajeria.md)
 ###### [Streaming](docs/audio-video/streaming.md)
