@@ -3,7 +3,7 @@
 ###### [DHCP](docs/dhcp/dhcp.md)
 ###### [DNS bind](docs/dns/dnsbind.md)
 ###### [DNS dnsmasq](docs/dns/dnsmasq.md)
-###### [SSH](docs/dns/ssh-tarea.md)
+###### [SSH](docs/ssh/ssh-tarea.md)
 
 ##### GUIAS PARA REALIZAR LAS TAREAS
 ###### [Guia FTP vsftp](docs/ftp/vsftpd.md)
