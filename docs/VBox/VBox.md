@@ -90,7 +90,10 @@ Te situas en la carpeta virtualBox y ejecutas
 este comando te lista la configuración de tus redes RedNat del virtualBox. En la siguiente pantalla tienes un ejemplo de mi configuración, como verás yo tengo la red
 192.168.10.0/24 en tu caso debe salirte la red 192.168.20.0/24 que es la que acabas de configurar  
 
-![VBoxmanage](../../img/VBox3.png)
+![VBoxmanage](../../img/VBox3.png)  
+
+Licencia: Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
+
 
 **Para entregar.**  
 Envía alguna imágen/es donde se pueda apreciar como se comunican las máquinas virtuales entre si, por ejemplo puedes hacer ping entre ellas, y comprueba que tienes salida a internet desde todas las máquinas, si no es así no continúes con las tareas hasta que el escenario funcione y sea estable.
