@@ -1425,3 +1425,6 @@ D. SOA
 ```
 
 > **Idea fundamental:** cuando un usuario escribe `www.aula.local`, DNS se encarga de averiguar qué dirección IP corresponde a ese nombre para que el equipo pueda comunicarse con el servidor correcto.
+
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
