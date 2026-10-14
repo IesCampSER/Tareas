@@ -124,3 +124,5 @@ Puedes probar el servidor FTP usando la herramienta `ftp` desde otro sistema o u
 
 - **Conéctate al servidor** usando la dirección IP de tu servidor Ubuntu y el puerto 21.
 - Usa el nombre de usuario y contraseña de un usuario local para autenticarse.
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).   
