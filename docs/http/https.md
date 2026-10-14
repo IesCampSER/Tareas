@@ -100,4 +100,6 @@ Listen 443
 ### 6. Y recargamos apache:
 ```$sudo systemctl reload apache2.service```
 
-Al hacer esto e intentar acceder a nuestra pagina web nos aparecerá el msg de advertencia para que aceptemos los riesgos ya que estamos intentando acceder a un sitio que está firmado por nosotros mismos y no por una entidad certificadora.
+Al hacer esto e intentar acceder a nuestra pagina web nos aparecerá el msg de advertencia para que aceptemos los riesgos ya que estamos intentando acceder a un sitio que está firmado por nosotros mismos y no por una entidad certificadora.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
