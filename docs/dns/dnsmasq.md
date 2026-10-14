@@ -154,3 +154,5 @@ Desde el cliente
 - dig www.marca.com (la misma que hayas utilizado en el paso 0 para ver que el servidor DNS hace la función de caché)
 - configuración de ip automática
 - ip obtenida del servidor dhcp de dnsmasq
+
+ **Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). 
