@@ -132,3 +132,5 @@ Usados en sistemas profesionales, videovigilancia y entornos corporativos.
 - Cifrado de contenidos.
 - Cumplimiento del **RGPD** en plataformas que gestionan datos personales.
 - Monitorización de calidad (latencia, jitter, pérdida de paquetes).
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
