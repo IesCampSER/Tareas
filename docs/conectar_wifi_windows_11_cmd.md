@@ -19,5 +19,7 @@
 
 ### 4. Confirmar la Conexión
 
-Una vez conectado, la red debería mostrar el estado de **Conectado**. Puedes verificar tu conexión en **Red e Internet** > **Estado**, donde se muestra la red actual a la que estás conectado.
+Una vez conectado, la red debería mostrar el estado de **Conectado**. Puedes verificar tu conexión en **Red e Internet** > **Estado**, donde se muestra la red actual a la que estás conectado.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
 
