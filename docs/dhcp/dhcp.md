@@ -182,4 +182,6 @@ Reserva ahora una dirección concreta al cliente según su MAC y entrega
 
 **Del cliente:** un terminal con el comando ipconfig ejecutado, para comprobar la configuración que ha obtenido del servidor. Recuerda que el cliente debe obtener la **ip** dinámicamente.
 
-**Del servidor:** la ventana de configuración del servidor DHCP, dentro de la carpeta: *Ámbito*, selecciona la carpeta: *Reservas*, donde se vea que la dirección obtenida por el cliente es la que se le ha configurado en este apartado al servidor.
+**Del servidor:** la ventana de configuración del servidor DHCP, dentro de la carpeta: *Ámbito*, selecciona la carpeta: *Reservas*, donde se vea que la dirección obtenida por el cliente es la que se le ha configurado en este apartado al servidor.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
