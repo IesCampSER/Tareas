@@ -49,4 +49,6 @@ Con esta configuración, cualquier tráfico dirigido a `localhost:8080` en el si
 
 Si ejecutáis esto en la máquina virtual donde acabáis de instalar el servicio FTP debería daros como resultado que el puerto 21 está abierto
 
-Si ejecutáis esto en la máquina física después de configurar el reenvío debería daros también que el puerto 21 está abierto
+Si ejecutáis esto en la máquina física después de configurar el reenvío debería daros también que el puerto 21 está abierto  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
