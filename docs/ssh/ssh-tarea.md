@@ -16,7 +16,7 @@ Para probar el funcionamiento de las actividades, crea en el servidor Ubuntu (`S
 
 > **Importante:** estas credenciales son únicamente para un entorno de prácticas aislado. No las utilices en equipos reales ni en sistemas expuestos a Internet.
 
-## Actividad 1. Instalación y configuración de OpenSSH
+## Actividad 1. Obligatoria. Instalación y configuración de OpenSSH
 
 ### Objetivo
 
