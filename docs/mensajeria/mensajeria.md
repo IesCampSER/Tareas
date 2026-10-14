@@ -88,3 +88,5 @@ El uso de la mensajería instantánea debe cumplir la normativa vigente, especia
 
 ## Conclusión
 La mensajería instantánea ha evolucionado desde simples sistemas de texto hasta plataformas completas de comunicación y colaboración. Aunque muchos protocolos clásicos han desaparecido, tecnologías abiertas como XMPP siguen siendo relevantes en contextos específicos, y la seguridad y la protección de datos son hoy elementos clave en su implantación.
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
