@@ -62,4 +62,6 @@ El comando lsof lista los archivos abiertos, incluidos los puertos.
 
 -n: No resuelve nombres de host.
 
-Utiliza cualquiera de estos comandos dependiendo de tus necesidades para identificar puertos abiertos en tu sistema Ubuntu 22.04.
+Utiliza cualquiera de estos comandos dependiendo de tus necesidades para identificar puertos abiertos en tu sistema Ubuntu 22.04.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
