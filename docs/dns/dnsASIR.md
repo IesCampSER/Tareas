@@ -1220,4 +1220,6 @@ journalctl -u bind9
 
 ---
 
-En ASIR, el objetivo no es únicamente saber instalar BIND9, sino comprender cómo participa DNS en una infraestructura de red y ser capaz de administrar, verificar y solucionar problemas del servicio.
+En ASIR, el objetivo no es únicamente saber instalar BIND9, sino comprender cómo participa DNS en una infraestructura de red y ser capaz de administrar, verificar y solucionar problemas del servicio.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
