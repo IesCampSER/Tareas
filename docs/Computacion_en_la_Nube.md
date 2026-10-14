@@ -60,4 +60,6 @@ La **computación en la nube** es un modelo que permite acceder a recursos infor
 
 ---
 
-**Nota:** Al elegir un proveedor de nube, es importante considerar factores como costos, compatibilidad con las necesidades del negocio y soporte técnico.
+**Nota:** Al elegir un proveedor de nube, es importante considerar factores como costos, compatibilidad con las necesidades del negocio y soporte técnico.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
