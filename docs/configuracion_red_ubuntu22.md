@@ -148,4 +148,6 @@ sudo netplan try
 ```
 
 ---
-**Nota:** Asegúrate de que la sintaxis del archivo YAML sea correcta, ya que errores de formato pueden causar problemas al aplicar los cambios.
+**Nota:** Asegúrate de que la sintaxis del archivo YAML sea correcta, ya que errores de formato pueden causar problemas al aplicar los cambios.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
