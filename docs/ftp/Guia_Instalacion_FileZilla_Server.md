@@ -56,4 +56,6 @@ Para conectar al servidor desde un cliente FTP, utiliza la dirección IP del ser
 
 ## Recursos Adicionales
 
-- [Documentación de FileZilla Server](https://wiki.filezilla-project.org/Documentation)
+- [Documentación de FileZilla Server](https://wiki.filezilla-project.org/Documentation)  
+  
+  **Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
