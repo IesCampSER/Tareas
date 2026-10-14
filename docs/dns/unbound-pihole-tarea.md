@@ -149,4 +149,6 @@ La entrega deberá incluir:
 9. Pruebas de diagnóstico realizadas.
 10. Conclusiones sobre el funcionamiento de la solución.
 
-No se valorará únicamente que el servicio funcione. Se deberá demostrar que se comprende **qué función desempeña Pi-hole, qué función desempeña Unbound y cómo intervienen ambos en la resolución DNS**.
+No se valorará únicamente que el servicio funcione. Se deberá demostrar que se comprende **qué función desempeña Pi-hole, qué función desempeña Unbound y cómo intervienen ambos en la resolución DNS**.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
