@@ -141,4 +141,6 @@ Si necesitas hacer la configuración persistente, puedes guardar las reglas de i
 sudo iptables-save > /etc/iptables/rules.v4
  ```
 
-(Instala iptables-persistent si no existe)
+(Instala iptables-persistent si no existe)  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
