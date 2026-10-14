@@ -330,5 +330,6 @@ Podemos encontrar diferentes tipos de soluciones:
 - Herramientas que utilizan un programa cliente para establecer la conexión con el equipo remoto.
 - Herramientas que proporcionan una interfaz web para administrar el sistema.
 
-Una solución de administración mediante interfaz web es **Webmin**.
-
+Una solución de administración mediante interfaz web es **Webmin**.  
+  
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
