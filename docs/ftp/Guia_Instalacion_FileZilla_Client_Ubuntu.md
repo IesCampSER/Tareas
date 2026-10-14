@@ -62,3 +62,5 @@ Al iniciar FileZilla Client, puedes conectar fácilmente a un servidor FTP, SFTP
 
 - [Documentación de FileZilla](https://wiki.filezilla-project.org/Documentation)
 - [Soporte de Ubuntu](https://help.ubuntu.com/)
+
+  **Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
