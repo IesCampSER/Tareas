@@ -198,4 +198,6 @@ Para eliminar completamente cualquier archivo de configuración residual, usa:
 
 ```bash
 sudo apt purge apache2 -y
-```
+```  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
