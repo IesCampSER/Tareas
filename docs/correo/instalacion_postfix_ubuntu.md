@@ -247,3 +247,6 @@ sudo systemctl status postfix
 ```
 
 Si todo está configurado correctamente deberías poder enviar y recibir correos desde tu cliente thunderbird entre los usuarios de correo que tienes en el servidor
+
+
+  **Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
