@@ -169,3 +169,5 @@ Si tienes \`ufw\` (firewall de Ubuntu) activado, deberías permitir el tráfico 
 ```
 sudo ufw allow 'Nginx Full'
 ```
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).  
