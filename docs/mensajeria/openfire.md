@@ -136,4 +136,6 @@ docker rm openfire
 - Ventajas de Docker frente a instalación tradicional  
 - Importancia de la persistencia de datos  
 - Riesgos de exponer el servicio sin TLS  
-- Otros métodos de autenticación soportados por Openfire  
+- Otros métodos de autenticación soportados por Openfire
+  
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
