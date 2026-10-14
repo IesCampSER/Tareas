@@ -83,4 +83,6 @@ En el contexto actual, el uso de listas de distribución debe cumplir con la nor
 - Medidas contra el spam y accesos no autorizados.
 
 ## Conclusión
-Las listas de distribución siguen siendo una herramienta clave de comunicación, aunque han evolucionado desde sistemas de correo tradicionales hacia soluciones integradas en la nube. Su correcta gestión técnica, organizativa y legal es esencial para garantizar una comunicación eficaz, segura y conforme a la normativa actual.
+Las listas de distribución siguen siendo una herramienta clave de comunicación, aunque han evolucionado desde sistemas de correo tradicionales hacia soluciones integradas en la nube. Su correcta gestión técnica, organizativa y legal es esencial para garantizar una comunicación eficaz, segura y conforme a la normativa actual.  
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
