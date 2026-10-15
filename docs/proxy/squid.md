@@ -259,7 +259,7 @@ Para esta práctica, puedes omitir esta sección y trabajar con la configuració
 1. Mantén el servidor Squid conectado a dos redes virtuales: una con acceso a Internet y otra red interna para los clientes.
 2. Conecta la tarjeta de red del cliente a la **misma red interna** que la interfaz interna del servidor.
 3. Asigna al cliente una dirección IP de la red `192.168.20.0/24` que no esté utilizada por otro equipo. Por ejemplo:
-   - Cliente 1: `192.168.20.20`
+   - Cliente 1: `192.168.20.20` (si utilizas tu cliente de siempre recuerda cambiar el tipo de adaptador)
    - Cliente 2: `192.168.20.21`
 4. Comprueba que el cliente puede comunicarse con la dirección IP interna del servidor. Si no hay comunicación, revisa las direcciones IP, la máscara y la configuración de VirtualBox.
 
