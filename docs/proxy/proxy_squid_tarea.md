@@ -41,7 +41,7 @@ Incluye una captura de pantalla en la que se vean las dos interfaces y sus direc
 
 ## Tarea 2. Instalación y configuración de Squid
 
-Instala Squid en la máquina Linux que has configurado en la tarea anterior.[Instalar proxy squid](../proxy/squid.md) )  
+Instala Squid en la máquina Linux que has configurado en la tarea anterior.  [Instalar proxy squid](../proxy/squid.md) )  
 
 A continuación, configura el servidor proxy siguiendo las indicaciones de los documentos proporcionados para la práctica. Debes crear y utilizar las ACL indicadas:
 
