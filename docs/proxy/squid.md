@@ -284,16 +284,7 @@ Comprueba los siguientes casos y anota los resultados:
 4. **Acceso desde un equipo fuera de la red autorizada:** si puedes realizar esta prueba en un entorno controlado, verifica que Squid deniega las solicitudes de equipos que no coincidan con una regla de permiso.
 
 Si una prueba no da el resultado esperado, revisa las ACL, el orden de las reglas, las IP de los clientes, el proxy configurado en el navegador y el estado del servicio.
-
-## 5. Recordatorio sobre máscaras de red
-
-| Prefijo CIDR | Máscara de red |
-|---|---|
-| `/8` | `255.0.0.0` |
-| `/16` | `255.255.0.0` |
-| `/24` | `255.255.255.0` |
-
-Por ejemplo, `192.168.20.0/24` representa la red con direcciones comprendidas entre `192.168.20.0` y `192.168.20.255`. Las direcciones utilizables para los equipos suelen ser `192.168.20.1` a `192.168.20.254`, siempre que no estén asignadas a otros dispositivos y de acuerdo con la configuración de la red.  
+   
 
   
 **Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
