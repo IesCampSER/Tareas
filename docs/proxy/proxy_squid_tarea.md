@@ -12,7 +12,7 @@
 
 Utiliza un servidor linux diferente al de las tareas anteriores NO UTILICES el server 192.168.20.5 sino luego te liarás con los adaptadores de red.
 
-Configura dos adaptadores de red en la máquina virtual de la siguiente manera (puedes consultar el enlace ![Configurar dos adaptadores de red en VB](../../VBox/dos_adaptadores_VB.md) )  
+Configura dos adaptadores de red en la máquina virtual de la siguiente manera (puedes consultar el enlace ![Configurar dos adaptadores de red en VB](../VBox/dos_adaptadores_VB.md) )  
 
 - **Adaptador 1: Red interna.** Se utilizará para comunicar el servidor proxy con el equipo cliente.
 - **Adaptador 2: NAT.** Se utilizará para que el servidor pueda acceder a Internet.
