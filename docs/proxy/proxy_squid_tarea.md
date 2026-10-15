@@ -1,7 +1,5 @@
 # Práctica: configuración de red e instalación de un servidor proxy Squid
 
-**Asignatura:** Servicios en Red — 2.º de SMR
-
 ## Objetivos
 
 - Configurar dos adaptadores de red en una máquina virtual Linux.
@@ -12,14 +10,14 @@
 
 ## Tarea 1. Configuración de los adaptadores de red
 
-Utiliza una máquina virtual Linux. Puedes partir de la máquina virtual que utilizaste en las prácticas anteriores, siempre que compruebes y adaptes su configuración de red.
+Utiliza un servidor linux diferente al de las tareas anteriores NO UTILICES el server 192.168.20.5 sino luego te liarás con los adaptadores de red.
 
-Configura los dos adaptadores de red de la máquina virtual de la siguiente manera:
+Configura dos adaptadores de red en la máquina virtual de la siguiente manera (puedes consultar el enlace ![Configurar dos adaptadores de red en VB](../../VBox/dos_adaptadores_VB.md) )  
 
 - **Adaptador 1: Red interna.** Se utilizará para comunicar el servidor proxy con el equipo cliente.
 - **Adaptador 2: NAT.** Se utilizará para que el servidor pueda acceder a Internet.
 
-La interfaz conectada a la Red interna debe tener una dirección IP estática distinta de la que utiliza el servidor de las prácticas anteriores. Para esta práctica, configura la IP `192.168.20.7`, con la máscara correspondiente a la red que estés utilizando. Si la red es `/24`, la configuración será `192.168.20.7/24`.
+La interfaz conectada a la Red interna debe tener una dirección IP estática distinta de la que utiliza el servidor de las prácticas anteriores. Para esta práctica, configura la IP 192.168.20.7/24.
 
 La interfaz conectada a NAT debe obtener su configuración IP mediante DHCP. En VirtualBox, la dirección asignada por NAT depende de la configuración de la máquina virtual.
 
