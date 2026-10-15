@@ -76,3 +76,5 @@ Si el primer comando funciona, pero el segundo no, puede haber un problema de re
 | Adaptador 2 | NAT | Acceso al exterior a través de la conexión del equipo anfitrión. |
 
 > **Importante:** las direcciones IP y los nombres de las interfaces pueden ser distintos en cada equipo. No copies una dirección IP o un nombre de interfaz de un ejemplo sin comprobar primero los valores de tu propia máquina virtual.
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
