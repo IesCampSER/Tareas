@@ -93,16 +93,6 @@ Entrega un documento o archivo con las siguientes evidencias:
 4. **Configuración de Squid:** captura de las partes relevantes de `squid.conf`, incluyendo las ACL `grupo1` y `webs_bloqueadas` y las reglas `http_access` que las aplican.
 5. **Registro de acceso:** captura de `access.log` en la que se identifiquen peticiones permitidas y denegadas correspondientes a las pruebas realizadas.
 
-Asegúrate de que las capturas sean legibles y de que se pueda relacionar cada prueba con la configuración que la provoca.
+Asegúrate de que las capturas sean legibles y de que se pueda relacionar cada prueba con la configuración que la provoca.  
 
-## Comprobaciones antes de entregar
-
-- [ ] La interfaz de Red interna del servidor tiene la IP `192.168.20.7`.
-- [ ] La interfaz NAT del servidor obtiene la configuración por DHCP.
-- [ ] La ruta por defecto del servidor utiliza la interfaz NAT.
-- [ ] El cliente está conectado a la misma Red interna de VirtualBox que el servidor.
-- [ ] El navegador del cliente tiene configurados la IP y el puerto del proxy.
-- [ ] Las ACL y las reglas `http_access` están configuradas y en el orden adecuado.
-- [ ] Se ha comprobado una petición bloqueada y otra permitida.
-- [ ] Las peticiones aparecen en el registro de Squid.
-- [ ] Se han incluido todas las capturas solicitadas.
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
