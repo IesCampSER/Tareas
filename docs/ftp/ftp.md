@@ -20,8 +20,7 @@ En una instalación típica:
 - **Servidor FTP:** servicio que escucha conexiones y aplica las reglas de autenticación, acceso y transferencia. En Linux se pueden utilizar `vsftpd` o ProFTPD.
 - **Sistema de archivos:** los archivos y directorios reales del servidor. El acceso depende tanto de la configuración del servicio como de los permisos del sistema operativo.
 
-![Arquitectura básica de FTP](../../img/ftp_arquitectura
-.png)
+![Arquitectura básica de FTP](../../img/ftp_arquitectura.png)
 
 ## 3. Cómo funciona FTP
 
