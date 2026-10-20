@@ -171,9 +171,7 @@ Para evitar usar una cuenta administrativa, crea un usuario específico para la 
 sudo adduser cliftp
 ```
 
-Asigna una contraseña de prueba  
-**ftp_1234**  
-El usuario tendrá una cuenta local, por lo que debes considerar también sus permisos y el acceso que pueda tener fuera del servicio FTP.
+Asigna una contraseña de prueba. El usuario tendrá una cuenta local, por lo que debes considerar también sus permisos y el acceso que pueda tener fuera del servicio FTP.
 
 ### 7.1. Permisos Linux
 
