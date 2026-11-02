@@ -606,4 +606,4 @@ La opción `-v` también permite observar información sobre la versión negocia
 
 ---
 
-Material docente elaborado y actualizado para la asignatura **Servicios en Red – ASIR**.
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
