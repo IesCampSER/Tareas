@@ -1,8 +1,5 @@
 # HTTP (Hypertext Transfer Protocol)
 
-> **Servicios en Red – 2.º ASIR**  
-> Material actualizado: noviembre de 2026
-
 ## 1. ¿Qué es HTTP?
 
 **HTTP (Hypertext Transfer Protocol)** es un protocolo de la capa de aplicación que permite intercambiar información entre clientes y servidores. Se utiliza principalmente para acceder a páginas web, pero también para transferir imágenes, documentos, vídeos, datos de aplicaciones y otros recursos.
