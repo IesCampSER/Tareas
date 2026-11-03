@@ -383,4 +383,4 @@ publicación de puertos.
 > publicación de puertos en la siguiente quincena.
 
 ------------------------------------------------------------------------
-
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
