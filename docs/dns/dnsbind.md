@@ -143,6 +143,8 @@ Entrega:
 
 captura de pantalla desde el cliente haciendo:
 - $ping dns.sercamp.org
+- dig sercamp.org NS
+- dig dns.sercamp.org A
 - $nslookup aula5pc2.sercamp.org
 - $nslookup ftp.sercamp.org
 - $dig sercamp.org
