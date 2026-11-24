@@ -76,7 +76,7 @@ Requisitos:
 
 ---
 
-# 14. Resumen: Dockerfile frente a Docker Compose
+# Resumen: Dockerfile frente a Docker Compose
 
 | Dockerfile | Docker Compose |
 |---|---|
@@ -95,7 +95,7 @@ Requisitos:
 
 ---
 
-## 15. Recursos para ampliar
+## Recursos para ampliar
 
 - [Documentación oficial de Dockerfile](https://docs.docker.com/reference/dockerfile/)
 - [Buenas prácticas para escribir Dockerfiles](https://docs.docker.com/build/building/best-practices/)
