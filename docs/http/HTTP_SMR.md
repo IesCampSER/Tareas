@@ -290,8 +290,16 @@ El primer número indica la categoría:
                                                   
   -----------------------------------------------------------------------
 
-### 5.1. Códigos más habituales
+### 5.1. Códigos más habituales  
 
+
+| Código | Nombre                  | Significado                         |
+|--------|-------------------------|-------------------------------------|
+| 200    | OK                      | La petición se ha realizado bien.   |
+| 301    | Moved Permanently       | El recurso se ha trasladado.        |
+| 403    | Forbidden               | El servidor deniega el acceso.      |
+| 404    | Not Found               | No se encuentra el recurso.         |
+| 500    | Internal Server Error   | Error interno del servidor.         |
   -----------------------------------------------------------------------
   Código                  Nombre                  Significado
   ----------------------- ----------------------- -----------------------
