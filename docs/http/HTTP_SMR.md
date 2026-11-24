@@ -526,24 +526,6 @@ Para consultar las capacidades de la herramienta:
 curl --version
 ```
 
-## 12. Actividades
-
-1.  Explica con tus palabras qué es HTTP y para qué se utiliza.
-2.  Indica qué diferencia hay entre un cliente HTTP y un servidor web. Pon un ejemplo de cada uno.
-3.  Describe los pasos que se producen cuando escribes una dirección web en el navegador y pulsas Intro.
-4.  ¿Qué es una URL? Identifica el esquema, servidor, puerto y ruta de esta dirección: `http://www.ejemplo.net:8080/documentos/manual.html`.
-5.  ¿Qué diferencia hay entre HTTP y HTTPS? ¿Qué puerto utiliza normalmente cada uno?
-6.  Explica la diferencia entre los métodos GET y POST. Pon un ejemplo de uso de cada uno.
-7.  ¿Qué información contiene una petición HTTP? ¿Y una respuesta?
-8.  Relaciona los siguientes códigos de estado con su significado: `200`, `301`, `403`, `404` y `500`.
-9.  Un usuario puede abrir la página principal de una web, pero no puede acceder a una carpeta restringida. ¿Qué código de estado podría recibir? Explica por
-    qué.
-10. ¿Para qué sirven las cabeceras `Content-Type`, `Host` y `User-Agent`?
-11. ¿Qué es una cookie y para qué puede utilizarla una página web?
-12. ¿Qué ventajas ofrece la caché del navegador?
-13. ¿Qué indica la cabecera `Content-Type: image/png`?
-14. Nombra dos programas que puedan actuar como clientes HTTP y dos programas que puedan actuar como servidores web.
-15. Realiza las pruebas de `curl` del apartado práctico. Anota el código de estado y dos cabeceras de respuesta de cada prueba.
 
 ## 13. Resumen
 
@@ -560,14 +542,6 @@ curl --version
 - Apache, Nginx e IIS son ejemplos de servidores web.
 - `curl` permite realizar pruebas HTTP desde la terminal.
 
-## 14. Referencias
-
-- MDN – Introducción a HTTP: https://developer.mozilla.org/es/docs/Web/HTTP
-- RFC 9110 – HTTP Semantics: https://www.rfc-editor.org/rfc/rfc9110
-- RFC 9112 – HTTP/1.1: https://www.rfc-editor.org/rfc/rfc9112
-- IANA – Media Types: https://www.iana.org/assignments/media-types/media-types.xhtml
-- curl – Documentación oficial: https://curl.se/docs/
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
