@@ -285,7 +285,8 @@ El primer número indica la categoría:
 
   5xx                     Error del servidor      El servidor no ha
                                                   podido completar la
-                                                  petición.
+                                                  petición.  
+                                                  
   -----------------------------------------------------------------------
 
 ### 5.1. Códigos más habituales
