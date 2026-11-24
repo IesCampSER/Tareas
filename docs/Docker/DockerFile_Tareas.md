@@ -1,4 +1,4 @@
-# Parte III. Actividades
+# Actividades DockerFile Docker Compose
 
 ## Actividad 1. Construcción de una imagen propia
 
@@ -53,7 +53,7 @@ Requisitos:
 
 **Entrega:** Dockerfile, `compose.yaml`, página HTML y evidencias de las comprobaciones.
 
-## Actividad 4. Desplegar dos servicios con Compose
+## Actividad 4. Desplegar dos servicios con Compose. Opcional
 
 Crea una aplicación formada por dos servicios: un servidor web Nginx y una base de datos MariaDB.
 
