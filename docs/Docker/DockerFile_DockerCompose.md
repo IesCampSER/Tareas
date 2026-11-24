@@ -701,3 +701,5 @@ services:
 El fichero `.env` facilita la configuración, pero no debe confundirse con un sistema seguro de gestión de secretos. No subas contraseñas reales ni credenciales a un repositorio público.
 
 ---
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
