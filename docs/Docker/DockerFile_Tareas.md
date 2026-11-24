@@ -102,3 +102,5 @@ Requisitos:
 - [Documentación oficial de Docker Compose](https://docs.docker.com/compose/)
 - [Referencia del fichero Compose](https://docs.docker.com/reference/compose-file/)
 - [Documentación de Docker Hub](https://hub.docker.com/)
+
+**Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
