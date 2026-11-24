@@ -53,7 +53,7 @@ Requisitos:
 
 **Entrega:** Dockerfile, `compose.yaml`, página HTML y evidencias de las comprobaciones.
 
-## Actividad 4. Desplegar dos servicios con Compose. Opcional
+## Actividad 4. Desplegar dos servicios con Compose.
 
 Crea una aplicación formada por dos servicios: un servidor web Nginx y una base de datos MariaDB.
 
