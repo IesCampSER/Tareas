@@ -69,26 +69,27 @@ HTTP ha evolucionado para mejorar la velocidad y el rendimiento de la
 navegación.
 
   -----------------------------------------------------------------------
-  Versión                 Transporte habitual     Características
+ |  Versión            |  Transporte habitual   |  Características
                                                   principales
   ----------------------- ----------------------- -----------------------
-  HTTP/1.0                TCP                     Las conexiones solían
+ |  HTTP/1.0           |  TCP                   |  Las conexiones solían
                                                   cerrarse después de
                                                   cada intercambio.
 
-  HTTP/1.1                TCP                     Permite mantener
+ |  HTTP/1.1           |  TCP                   |  Permite mantener
                                                   conexiones abiertas y
                                                   reutilizarlas para
                                                   varias peticiones.
 
-  HTTP/2                  TCP                     Mejora el rendimiento
+ |  HTTP/2             |  TCP                   |  Mejora el rendimiento
                                                   mediante multiplexación
                                                   y compresión de
                                                   cabeceras.
 
-  HTTP/3                  QUIC sobre UDP          Utiliza QUIC para
+ | HTTP/3              |  QUIC sobre UDP        |  Utiliza QUIC para
                                                   mejorar el transporte
-                                                  de las comunicaciones.
+                                                  de las comunicaciones.  
+                                                  
   -----------------------------------------------------------------------
 
 Para comprender el funcionamiento básico de HTTP es especialmente útil
