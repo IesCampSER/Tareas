@@ -1,4 +1,4 @@
-# Actividades DockerFile Docker Compose
+# Actividades DockerFile, Docker Compose
 
 ## Actividad 1. Construcción de una imagen propia
 
