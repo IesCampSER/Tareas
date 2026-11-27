@@ -142,7 +142,7 @@ No basta con indicar que el script se ha ejecutado correctamente. Debéis demost
 Las capturas deben permitir leer la información relevante.
 
 
-# 8. Actividad final: ¿qué ocurriría si...?
+# 8. Actividad final: ¿qué ocurriría si...?. OPCIONAL
 
 Responded justificando qué recurso o configuración revisaríais y por qué.
 
@@ -153,7 +153,7 @@ Responded justificando qué recurso o configuración revisaríais y por qué.
 5. Un usuario intenta conectarse a MySQL desde su ordenador personal a través de Internet. ¿Debería poder hacerlo con la configuración solicitada? Explicadlo.
 6. Se elimina EC2, pero la empresa quiere conservar los documentos y la base de datos. ¿Qué recursos deberían mantenerse y qué aspectos habría que comprobar antes de borrar nada?
 
-# 9. Ampliación: modificación de la infraestructura
+# 9. Ampliación: modificación de la infraestructura. OPCIONAL
 
 Añadid una segunda instancia EC2 que también ejecute Apache. Antes de modificar el script, indicad qué recursos nuevos serían necesarios y cuáles podrían reutilizarse.
 
