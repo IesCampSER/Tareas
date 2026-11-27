@@ -122,7 +122,6 @@ Anotad el identificador de la instancia, motor y versión, clase de instancia, z
 - Si elimináis la instancia EC2, ¿se elimina automáticamente la base de datos RDS?
 - ¿Tener subredes en dos zonas de disponibilidad dentro del DB subnet group significa necesariamente que la base de datos esté configurada en Multi-AZ? Explicad la diferencia.
 
----  
 
 # 7. Comprobaciones y evidencias que debéis entregar
 
@@ -142,7 +141,6 @@ No basta con indicar que el script se ha ejecutado correctamente. Debéis demost
 
 Las capturas deben permitir leer la información relevante.
 
----
 
 # 8. Actividad final: ¿qué ocurriría si...?
 
@@ -155,8 +153,6 @@ Responded justificando qué recurso o configuración revisaríais y por qué.
 5. Un usuario intenta conectarse a MySQL desde su ordenador personal a través de Internet. ¿Debería poder hacerlo con la configuración solicitada? Explicadlo.
 6. Se elimina EC2, pero la empresa quiere conservar los documentos y la base de datos. ¿Qué recursos deberían mantenerse y qué aspectos habría que comprobar antes de borrar nada?
 
----   
-
 # 9. Ampliación: modificación de la infraestructura
 
 Añadid una segunda instancia EC2 que también ejecute Apache. Antes de modificar el script, indicad qué recursos nuevos serían necesarios y cuáles podrían reutilizarse.
@@ -166,8 +162,6 @@ Añadid una segunda instancia EC2 que también ejecute Apache. Antes de modifica
 - Determinad si necesita un nuevo grupo de seguridad o puede utilizar el existente.
 - Comprobad que ambas instancias sirven correctamente la página web.
 - Explicad qué ocurriría si se elimina una de las dos instancias.
-
----  
 
 # 10. Entrega
 
