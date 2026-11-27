@@ -55,7 +55,7 @@ Antes de ejecutar el script, preparad un esquema con la VPC, las tres subredes, 
 ---  
 ### Fase 2. Creación de la VPC y las subredes
 
-Iniciad AWS Academy Learner Lab desde Vocareum y comprobad que el laboratorio está activo. Ejecutad el script proporcionado o desarrollado con ayuda de una herramienta de IA. Después, localizad las redes en la consola y comprobad su configuración.
+Iniciad AWS Academy Learner Lab desde Vocareum y comprobad que el laboratorio está activo. Ejecutad el script **desarrollado con ayuda de una herramienta de IA**. Después, localizad las redes en la consola y comprobad su configuración.
 
 **Cuestiones de reflexión que debéis entregar:**
 
