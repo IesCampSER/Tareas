@@ -170,3 +170,5 @@ Añadid una segunda instancia EC2 que también ejecute Apache. Antes de modifica
 - Debéis poder explicar el propósito de cada recurso y justificar las principales decisiones de configuración.
 - Las respuestas deben basarse en la infraestructura desplegada. Siempre que sea posible, acompañadlas de una captura o comprobación realizada en la consola.
 - Podéis utilizar herramientas de IA para comprender los servicios, preparar o revisar el script y resolver errores. Debéis revisar el código, comprobar qué recursos crea y ser capaces de explicar su funcionamiento.
+
+ **Licencia:** Lourdes Tamarit. Esta obra está bajo una licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
