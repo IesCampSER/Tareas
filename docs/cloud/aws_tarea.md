@@ -1,16 +1,16 @@
 SERVICIOS EN RED · 2.º ASIR
 
-# PRÁCTICA: DESPLIEGUE DE UNA INFRAESTRUCTURA CLOUD EN AWS
+# DESPLIEGUE DE UNA INFRAESTRUCTURA CLOUD EN AWS
 
 Diseño, automatización y comprobación de servicios de red
 
-## 1. Situación planteada
+# 1. Situación planteada
 
 Una empresa necesita desplegar en la nube una infraestructura básica para alojar la página web de su intranet, almacenar documentos y gestionar la información mediante una base de datos relacional. Como técnicos de sistemas, deberéis diseñar y desplegar la infraestructura utilizando los servicios de AWS disponibles en AWS Academy Learner Lab.
 
 El objetivo no es únicamente crear los recursos: también debéis comprender para qué sirve cada servicio, cómo se relacionan entre sí y qué consecuencias tienen las decisiones de configuración.
 
-## 2. Objetivos
+# 2. Objetivos
 
 - Diseñar una red virtual propia mediante Amazon VPC y dividirla en subredes.
 - Configurar subredes públicas y privadas, tablas de rutas e Internet Gateway.
@@ -21,7 +21,7 @@ El objetivo no es únicamente crear los recursos: también debéis comprender pa
 - Automatizar la creación de recursos mediante un script y verificar el resultado desde la consola.
 - Justificar las decisiones de diseño y explicar el funcionamiento de los recursos.
 
-## 3. Arquitectura que debéis desplegar
+# 3. Arquitectura que debéis desplegar
 
 La infraestructura debe incluir, como mínimo, los siguientes elementos:
 
@@ -40,9 +40,7 @@ La infraestructura debe incluir, como mínimo, los siguientes elementos:
 
 No es necesario crear una NAT Gateway. La instancia web se ubicará en la subred pública y la base de datos no debe ser accesible públicamente.
 
----
-
-## 4. Trabajo que debéis realizar
+# 4. Trabajo que debéis realizar
 
 ### Fase 1. Diseño de la arquitectura
 
@@ -54,7 +52,7 @@ Antes de ejecutar el script, preparad un esquema con la VPC, las tres subredes, 
 - ¿Qué diferencia hay entre una región de AWS y una zona de disponibilidad?
 - ¿Por qué se utilizan dos subredes privadas en zonas de disponibilidad diferentes para RDS?
 - ¿Qué recursos necesitan recibir conexiones desde Internet y cuáles deben permanecer aislados?
-
+---  
 ### Fase 2. Creación de la VPC y las subredes
 
 Iniciad AWS Academy Learner Lab desde Vocareum y comprobad que el laboratorio está activo. Ejecutad el script proporcionado o desarrollado con ayuda de una herramienta de IA. Después, localizad las redes en la consola y comprobad su configuración.
@@ -66,11 +64,7 @@ Iniciad AWS Academy Learner Lab desde Vocareum y comprobad que el laboratorio es
 - ¿En qué zonas de disponibilidad se han creado las subredes privadas? ¿Por qué interesa que estén en zonas diferentes?
 - ¿Se solapan los rangos IP de las subredes? ¿Qué problema produciría un solapamiento?
 - ¿Podrían existir dos VPC distintas con el mismo rango de direcciones IP?
-
----
-
-## 5. SERVICIOS EN RED · 2.º ASIR
-
+---  
 ### Fase 3. Internet Gateway y tablas de rutas
 
 Comprobad que el Internet Gateway está asociado a la VPC, que la tabla de rutas pública está asociada a la subred pública y que las subredes privadas utilizan su tabla de rutas correspondiente.
@@ -82,6 +76,8 @@ Comprobad que el Internet Gateway está asociado a la VPC, que la tabla de rutas
 - ¿Qué rutas aparecen en la tabla asociada a las subredes privadas? ¿Tienen una ruta directa hacia el Internet Gateway?
 - ¿Qué ocurriría con el acceso a Internet de la instancia web si eliminaseis la ruta por defecto de la tabla pública?
 - ¿Una subred es pública únicamente por tener un rango IP determinado? Explicad qué condiciones hacen que una subred sea pública.
+
+---  
 
 ### Fase 4. Servidor web EC2 y grupo de seguridad
 
@@ -95,7 +91,7 @@ Comprobad que EC2 se ha creado en la subred pública y tiene una dirección IPv4
 - ¿Qué diferencia hay entre un grupo de seguridad y una tabla de rutas?
 - ¿Qué es User Data y cuándo se ejecuta? ¿Qué ventaja tiene frente a instalar Apache manualmente después de crear la instancia?
 - Que EC2 aparezca en estado «Running», ¿garantiza que Apache esté funcionando? ¿Cómo lo comprobaríais?
-
+---  
 ### Fase 5. Almacenamiento con Amazon S3
 
 Localizad el bucket creado, comprobad su configuración y subid un pequeño archivo de prueba. Verificad que el bucket mantiene bloqueado el acceso público.
@@ -108,9 +104,7 @@ Localizad el bucket creado, comprobad su configuración y subid un pequeño arch
 - Si se elimina la instancia EC2, ¿se eliminan también los objetos almacenados en S3?
 - Si la aplicación alojada en EC2 necesitase guardar archivos en S3, ¿cómo le daríais permisos de forma segura? Investigad el uso de roles de IAM.
 
----
-
-## 6. SERVICIOS EN RED · 2.º ASIR
+---  
 
 ### Fase 6. Base de datos Amazon RDS MySQL
 
@@ -128,7 +122,9 @@ Anotad el identificador de la instancia, motor y versión, clase de instancia, z
 - Si elimináis la instancia EC2, ¿se elimina automáticamente la base de datos RDS?
 - ¿Tener subredes en dos zonas de disponibilidad dentro del DB subnet group significa necesariamente que la base de datos esté configurada en Multi-AZ? Explicad la diferencia.
 
-## 7. Comprobaciones y evidencias que debéis entregar
+---  
+
+# 7. Comprobaciones y evidencias que debéis entregar
 
 No basta con indicar que el script se ha ejecutado correctamente. Debéis demostrar que los recursos existen y que su configuración coincide con los requisitos.
 
@@ -148,7 +144,7 @@ Las capturas deben permitir leer la información relevante.
 
 ---
 
-## 8. Actividad final: ¿qué ocurriría si...?
+# 8. Actividad final: ¿qué ocurriría si...?
 
 Responded justificando qué recurso o configuración revisaríais y por qué.
 
@@ -159,7 +155,9 @@ Responded justificando qué recurso o configuración revisaríais y por qué.
 5. Un usuario intenta conectarse a MySQL desde su ordenador personal a través de Internet. ¿Debería poder hacerlo con la configuración solicitada? Explicadlo.
 6. Se elimina EC2, pero la empresa quiere conservar los documentos y la base de datos. ¿Qué recursos deberían mantenerse y qué aspectos habría que comprobar antes de borrar nada?
 
-## 9. Ampliación: modificación de la infraestructura
+---   
+
+# 9. Ampliación: modificación de la infraestructura
 
 Añadid una segunda instancia EC2 que también ejecute Apache. Antes de modificar el script, indicad qué recursos nuevos serían necesarios y cuáles podrían reutilizarse.
 
@@ -169,7 +167,9 @@ Añadid una segunda instancia EC2 que también ejecute Apache. Antes de modifica
 - Comprobad que ambas instancias sirven correctamente la página web.
 - Explicad qué ocurriría si se elimina una de las dos instancias.
 
-## 10. Entrega y criterios de realización
+---  
+
+# 10. Entrega
 
 - Entregad el script utilizado y el documento con las respuestas y evidencias solicitadas.
 - El script debe estar comentado y utilizar nombres claros para los recursos.
